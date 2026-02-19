@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 40 20% 90%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 40 20% 90%;
+
+    --primary: 38 45% 60%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 40 20% 85%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 50%;
+
+    --accent: 38 45% 60%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 14%;
+    --input: 0 0% 14%;
+    --ring: 38 45% 60%;
+
+    --radius: 0.25rem;
+
+    --gold: 38 45% 60%;
+    --gold-light: 38 50% 72%;
+    --gold-dark: 38 40% 45%;
+    --surface: 0 0% 7%;
+    --surface-elevated: 0 0% 10%;
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  ::selection {
+    background: hsl(38 45% 60% / 0.3);
+    color: hsl(40 20% 95%);
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(0 0% 4%);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(0 0% 18%);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(38 45% 60% / 0.4);
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(38 50% 72%), hsl(38 45% 60%), hsl(38 40% 45%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gold {
+    border-color: hsl(38 45% 60% / 0.3);
+  }
+
+  .bg-gold-subtle {
+    background: hsl(38 45% 60% / 0.08);
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 40px hsl(38 45% 60% / 0.15);
+  }
+
+  .line-gold {
+    background: linear-gradient(90deg, transparent, hsl(38 45% 60% / 0.5), transparent);
+    height: 1px;
+  }
+}
+
+/* Print / PDF styles */
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  * {
+    color: black !important;
+    border-color: #ddd !important;
+    background: white !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-text-fill-color: black !important;
+  }
+
+  .text-gradient-gold {
+    background: none !important;
+    -webkit-text-fill-color: hsl(38 40% 35%) !important;
+    color: hsl(38 40% 35%) !important;
+  }
+
+  .bg-gold-subtle {
+    background: hsl(38 45% 95%) !important;
+  }
+
+  .bg-card, .bg-surface {
+    background: #fafafa !important;
+  }
+
+  .line-gold {
+    background: #ccc !important;
+  }
+
+  .glow-gold {
+    border: 1px solid hsl(38 45% 60%) !important;
+  }
+
+  section, div {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print\\:hidden {
+    display: none !important;
+  }
+
+  /* Hero section adjustments */
+  section:first-child {
+    min-height: auto !important;
+    padding: 3rem 0 !important;
+  }
+
+  section:first-child img {
+    display: none !important;
+  }
+
+  section:first-child > div:first-child {
+    display: none !important;
+  }
+
+  /* Remove animations for print */
+  * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  h1 { font-size: 28pt !important; }
+  h2 { font-size: 22pt !important; }
+  h3 { font-size: 16pt !important; }
+  h4 { font-size: 13pt !important; }
+
+  .text-muted-foreground {
+    color: #555 !important;
+    -webkit-text-fill-color: #555 !important;
+  }
+
+  .text-primary {
+    color: hsl(38 40% 35%) !important;
+    -webkit-text-fill-color: hsl(38 40% 35%) !important;
+  }
+
+  .text-destructive {
+    color: #c00 !important;
+    -webkit-text-fill-color: #c00 !important;
+  }
+}
