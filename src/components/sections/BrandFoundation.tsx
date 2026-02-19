@@ -15,22 +15,19 @@ import {
   Gift, 
   Mic2, 
   Palette, 
-  Image,
-  CheckCircle2,
-  AlertCircle,
-  Users,
   Layers,
   PenTool,
-  Video
+  CheckCircle2,
+  AlertCircle,
 } from "lucide-react";
 
 const BrandFoundation = () => (
   <section className="py-24 md:py-32 luxury-container">
     <div className="mb-12">
-      <Badge variant="luxury" className="mb-4">Section 3</Badge>
+      <Badge variant="luxury" className="mb-4">Foundation</Badge>
       <SectionTitle
-        title="Brand Foundation (Step 1)"
-        subtitle="In a USD 400 million niche segment growing at 8 percent annually, unclear brand foundations increase acquisition costs, reduce authority perception, and amplify risk in high-cost digital environments."
+        title="Brand Strategy"
+        subtitle="In a USD 400 million niche segment, unclear brand foundations increase acquisition costs and reduce authority perception."
       />
     </div>
 
@@ -38,86 +35,86 @@ const BrandFoundation = () => (
       <Card className="glass-card">
         <CardContent className="pt-6">
           <p className="font-body text-muted-foreground leading-relaxed">
-            This step must be completed before meaningful digital investment. Brand authority in the UAE fragrance market is not created through advertising alone. It is created through clarity, cultural alignment, performance credibility, and disciplined visual execution. Marketing can amplify a strong foundation, but it cannot compensate for structural weakness in identity or positioning.
+            <strong className="text-primary block mb-2">Core Strategy</strong>
+            Authority isn't just ads—it's engineering. We build trust through precision, cultural alignment, and flawless execution. Marketing amplifies this foundation; it doesn't replace it.
           </p>
         </CardContent>
       </Card>
     </AnimatedSection>
 
-    {/* 3.1 Brand Name Validation */}
+    {/* Naming Protocol */}
     <AnimatedSection className="mb-16">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">3.1</span> Brand Name Validation
+        Naming & Identity
       </h3>
-      <p className="font-body text-muted-foreground mb-8 max-w-4xl">Brand naming is not creative decoration. It is a legal, cultural, linguistic, and positioning decision. In the United Arab Emirates, naming must pass four structured filters:</p>
+      <p className="font-body text-muted-foreground mb-8 max-w-4xl">
+        Every name must pass four critical filters to ensure safety, resonance, and ownership in the UAE market.
+      </p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {[
           {
             icon: Globe,
-            title: "1. Cultural Screening",
+            title: "Cultural Screening",
             points: [
-              "Have no negative meaning in Arabic.",
-              "Avoid phonetic similarity to inappropriate words in Gulf dialects.",
-              "Avoid religious misuse.",
-              "Avoid cultural insensitivity.",
+              "Zero negative connotation",
+              "Phonetic safety (Gulf dialects)",
+              "Religious compliance",
+              "Regional value alignment"
             ],
-            note: "Fragrance is culturally embedded in the UAE. Misalignment can damage credibility immediately and permanently within tightly networked consumer communities.",
+            note: "Risk: Cultural misalignment causes permanent brand damage."
           },
           {
             icon: Languages,
-            title: "2. Arabic Language Compatibility",
+            title: "Linguistic Compatibility",
             points: [
-              "Be pronounceable in Arabic.",
-              "Translate cleanly into Arabic script.",
-              "Maintain visual balance in bilingual layout.",
-              "Avoid awkward transliteration.",
+              "Clean Arabic pronunciation",
+              "Elegant script translation",
+              "Bilingual visual balance",
+              "No awkward transliteration"
             ],
-            note: "In the UAE luxury market, bilingual presentation is expected. A name that works only in English reduces market alignment and may signal foreign detachment from local culture.",
+            note: "Requirement: Bilingual mastery is a non-negotiable luxury signal."
           },
           {
             icon: ShieldCheck,
-            title: "3. Trademark Availability",
+            title: "Trademark Viability",
             points: [
-              "Availability within fragrance classification in the UAE.",
-              "No conflict with existing niche fragrance houses.",
-              "No similarity to international luxury brands that may cause confusion.",
+              "UAE Class 3 clearance",
+              "Distinct from niche players",
+              "Global conflict check"
             ],
-            note: "Rebranding after launch is costly and damages authority. Trademark validation must precede creative rollout.",
+            note: "Asset: IP security must precede any public visibility."
           },
           {
             icon: Monitor,
-            title: "4. Digital Availability",
+            title: "Digital Discoverability",
             points: [
-              "Domain availability.",
-              "Social media handle availability.",
-              "Clean search engine results (no unrelated associations).",
+              "Exact-match .com/.ae",
+              "Unified social handles",
+              "Clean SERP footprint"
             ],
-            note: "Digital discoverability affects paid performance efficiency, particularly in AED 6–40 CPC environments where branded search and retargeting become increasingly important over time.",
+            note: "Impact: Discoverability lowers long-term acquisition costs."
           },
         ].map((filter, i) => (
           <AnimatedSection key={filter.title} delay={i * 0.1}>
             <Card className="h-full glass-card hover:border-primary/30 transition-colors duration-300">
-              <CardHeader className="pb-4 border-b border-border/50">
-                <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
-                  <filter.icon className="w-5 h-5 text-primary" />
-                  {filter.title}
-                </CardTitle>
+              <CardHeader>
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <filter.icon className="w-6 h-6 text-primary" />
+                </div>
+                <CardTitle className="font-display text-xl">{filter.title}</CardTitle>
               </CardHeader>
-              <CardContent className="pt-6 flex flex-col h-full">
-                <ul className="space-y-3 mb-6 flex-1">
-                  {filter.points.map((p, idx) => (
+              <CardContent>
+                <ul className="space-y-3 mb-6">
+                  {filter.points.map((point, idx) => (
                     <li key={idx} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary/70 flex-shrink-0 mt-2" />
-                      {p}
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      {point}
                     </li>
                   ))}
                 </ul>
-                <div className="bg-primary/5 border border-primary/10 rounded-md p-4 mt-auto">
-                  <div className="flex items-start gap-2">
-                    <AlertCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    <p className="text-xs text-muted-foreground italic">{filter.note}</p>
-                  </div>
+                <div className="bg-secondary/30 p-3 rounded text-xs text-muted-foreground italic border border-secondary">
+                  {filter.note}
                 </div>
               </CardContent>
             </Card>
@@ -126,10 +123,10 @@ const BrandFoundation = () => (
       </div>
     </AnimatedSection>
 
-    {/* 3.2 Brand Positioning */}
+    {/* Positioning Strategy */}
     <AnimatedSection className="mb-16">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">3.2</span> Brand Positioning
+        Positioning Strategy
       </h3>
       
       <Card className="glass-card">
@@ -197,10 +194,10 @@ const BrandFoundation = () => (
       </Card>
     </AnimatedSection>
 
-    {/* 3.3 Brand Architecture */}
+    {/* Portfolio Architecture */}
     <AnimatedSection className="mb-16">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">3.3</span> Brand Architecture
+        Portfolio Architecture
       </h3>
       <p className="font-body text-muted-foreground mb-8 max-w-4xl">Brand architecture prevents dilution and internal competition. It defines how products are structured under one identity.</p>
       
@@ -277,10 +274,10 @@ const BrandFoundation = () => (
       </Card>
     </AnimatedSection>
 
-    {/* 3.4 Brand Voice */}
+    {/* Voice & Messaging */}
     <AnimatedSection className="mb-16">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">3.4</span> Brand Voice & Messaging
+        Voice & Messaging
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -346,10 +343,10 @@ const BrandFoundation = () => (
       </div>
     </AnimatedSection>
 
-    {/* 3.5 Visual Identity */}
+    {/* Visual Identity */}
     <AnimatedSection className="mb-16">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">3.5</span> Visual Identity System
+        Visual Identity
       </h3>
       <p className="font-body text-muted-foreground mb-8 max-w-4xl">Visual identity must reflect premium niche positioning. In Dubai, where luxury accounts for over 80 percent of fragrance revenue, visual misalignment reduces authority.</p>
       
@@ -414,49 +411,10 @@ const BrandFoundation = () => (
             <CheckCircle2 className="w-5 h-5 text-primary mt-0.5" />
             <div>
               <div className="text-sm font-semibold text-foreground mb-1">Consistency Across Touchpoints</div>
-              <p className="text-xs text-muted-foreground">Website, social, packaging, and influencer kits must be visually unified. Inconsistency increases perceived amateurism.</p>
+              <p className="text-xs text-muted-foreground">From Instagram to unboxing, the visual language must not break. Inconsistency destroys trust.</p>
             </div>
           </CardContent>
         </Card>
-      </div>
-    </AnimatedSection>
-
-    {/* 3.6 Creative Asset Development */}
-    <AnimatedSection>
-      <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">3.6</span> Creative Asset Development
-      </h3>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {[
-          { icon: Image, title: "Cinematic Product Photography", items: ["High-res imagery", "Texture emphasis", "Detail shots", "Prestige lighting"] },
-          { icon: Sparkles, title: "Ingredient Storytelling", items: ["Sandalwood origin", "Raw material texture", "Performance context"] },
-          { icon: Video, title: "Video Assets", items: ["Short-form vertical", "Performance demos", "Layering rituals", "Ramadan edits"] },
-          { icon: Layers, title: "Social Content Library", items: ["Posting calendar", "Authority posts", "Educational content", "Sampling CTA"] },
-          { icon: Target, title: "Retargeting Variants", items: ["Performance reinforcement", "Sampling reminders", "Authority validation"] },
-          { icon: Gift, title: "Influencer Kits", items: ["Brand guidelines", "Visual references", "Messaging anchors", "Usage demos"] },
-        ].map((block, i) => (
-          <AnimatedSection key={block.title} delay={i * 0.05}>
-            <Card className="h-full glass-card hover:border-primary/30 transition-all duration-300">
-              <CardHeader className="pb-3 border-b border-border/30">
-                <div className="flex items-center gap-3">
-                  <block.icon className="w-4 h-4 text-primary" />
-                  <CardTitle className="font-display text-sm text-foreground">{block.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="pt-4">
-                <div className="space-y-2">
-                  {block.items.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-2 text-xs text-muted-foreground">
-                      <div className="w-1 h-1 rounded-full bg-primary flex-shrink-0 mt-1.5" />
-                      <span>{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </AnimatedSection>
-        ))}
       </div>
     </AnimatedSection>
   </section>

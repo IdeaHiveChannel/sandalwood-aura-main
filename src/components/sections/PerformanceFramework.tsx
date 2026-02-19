@@ -90,7 +90,7 @@ const PerformanceFramework = () => {
     <div className="max-w-6xl mx-auto relative z-10">
       <div className="mb-8 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-4 w-full sm:w-auto">
-          <span className="font-body text-xs tracking-[0.3em] uppercase text-primary">Section 10</span>
+          <span className="font-body text-xs tracking-[0.3em] uppercase text-primary">Measurement Protocol</span>
           <div className="h-px bg-primary/30 w-12" />
           <Badge variant="outline" className="border-primary/30 text-muted-foreground font-normal tracking-wider hidden sm:inline-flex">YEAR 1 — UAE ONLY</Badge>
         </div>
@@ -124,28 +124,29 @@ const PerformanceFramework = () => {
         subtitle="Tracking & Improving"
       />
 
-      {/* 10.0 Context */}
+      {/* Context */}
       <AnimatedSection className="mb-16 pdf-section">
-        <div className="bg-surface border border-border rounded-lg p-6 md:p-8 space-y-6">
+        <div className="glass-card border border-primary/20 rounded-lg p-6 md:p-8 space-y-6">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Activity className="w-5 h-5 text-primary" />
-              <h3 className="font-display text-xl font-semibold text-foreground">Market Facts</h3>
+              <h3 className="font-display text-xl font-semibold text-foreground">Performance Baseline</h3>
             </div>
             <p className="text-sm text-muted-foreground">
-              This is how we measure success. These numbers are based on real UAE market data.
+              <strong className="text-primary">Strategic Measurement:</strong>
+              Success is defined by verified metrics, not estimates. The following data points represent the current UAE luxury landscape benchmarks.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
               {[
-                "Specialty perfume market: ~$400M",
-                "Most sales are luxury (>80%)",
-                "Stores sell the most (~59%)",
-                "Online sales growing (~6%)",
-                "Ad Click Cost: AED 6–40",
-                "Sampling success: ≥35% buy later",
-                "Immediate buyers: ~13%",
-                "Influencer Profit: 6.5x spend"
+                "Specialty Market Size: ~$400M",
+                "Luxury Segment Dominance: >80%",
+                "Retail Channel Share: ~59%",
+                "E-commerce Growth Rate: ~6% YoY",
+                "CPC Range: AED 6–40",
+                "Sampling Retention: ≥35%",
+                "Immediate Conversion: ~13%",
+                "Influencer ROAS: 6.5x"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
@@ -156,7 +157,8 @@ const PerformanceFramework = () => {
 
             <div className="bg-primary/5 border-l-2 border-primary p-4 rounded-r mt-4">
               <p className="text-xs text-foreground italic">
-                "We don't guess revenue. We measure what actually happens."
+                <strong className="block mb-1">Philosophy:</strong>
+                "We do not forecast revenue based on optimism. We project based on measured acquisition costs."
               </p>
             </div>
           </div>
@@ -165,16 +167,16 @@ const PerformanceFramework = () => {
 
       <Separator className="my-12 bg-border/50" />
 
-      {/* 10.1 Cost to Get Customers */}
+      {/* Acquisition Economics */}
       <AnimatedSection className="mb-8 pdf-section">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Getting Customers</Badge>
-              <h3 className="font-display text-2xl md:text-3xl text-foreground">10.1 How Much It Costs to Get a Customer</h3>
+              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Acquisition Economics</Badge>
+              <h3 className="font-display text-2xl md:text-3xl text-foreground">Customer Acquisition Cost (CAC)</h3>
             </div>
             <p className="text-muted-foreground mt-1 max-w-2xl">
-              The cost to get a new customer depends on competition and how good our website is.
+              Defining the unit cost of growth.
             </p>
           </div>
         </div>
@@ -182,25 +184,25 @@ const PerformanceFramework = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 pdf-section">
         
-        {/* What We Expect to Pay */}
+        {/* Benchmark Metrics */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Target className="w-4 h-4 text-primary" />
-                What We Expect to Pay
+                Benchmark Metrics
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4">
                 <div className="space-y-3">
                   {[
-                    { label: "Normal Click Cost", value: "AED 6–15" },
-                    { label: "Ready-to-Buy Click Cost", value: "AED 20–40" },
-                    { label: "Cost to Show Ads", value: "AED 5–15" },
-                    { label: "Influencer Profit", value: "6.5x" },
-                    { label: "Sampling Success", value: "≥35%" },
-                    { label: "Immediate Buyers", value: "13%" }
+                    { label: "Standard CPC", value: "AED 6–15" },
+                    { label: "High-Intent CPC", value: "AED 20–40" },
+                    { label: "CPM (Reach)", value: "AED 5–15" },
+                    { label: "Influencer ROAS", value: "6.5x" },
+                    { label: "Sampling Conversion", value: "≥35%" },
+                    { label: "Immediate Conversion", value: "13%" }
                   ].map((item, i) => (
                     <div key={i} className="flex justify-between items-center text-xs border-b border-border/50 pb-2 last:border-0">
                       <span className="text-muted-foreground">{item.label}</span>
@@ -213,13 +215,13 @@ const PerformanceFramework = () => {
           </Card>
         </AnimatedSection>
 
-        {/* What We Need to Know First */}
+        {/* Profitability Inputs */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Calculator className="w-4 h-4 text-primary" />
-                What We Need to Know First
+                Profitability Inputs
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
@@ -228,20 +230,20 @@ const PerformanceFramework = () => {
                   <div className="flex items-start gap-2">
                     <AlertTriangle className="w-4 h-4 text-destructive shrink-0 mt-0.5" />
                     <p className="text-xs text-muted-foreground">
-                      We can't calculate exact profit without these numbers:
+                      Accurate profit modeling requires the following validated data points:
                     </p>
                   </div>
                 </div>
                 
                 <div className="grid grid-cols-1 gap-2">
                   {[
-                    "Website buying rate",
-                    "Average order value (AOV)",
-                    "Return rate",
-                    "Product cost",
-                    "Sampling cost",
-                    "Influencer fees",
-                    "Payment fees (COD/BNPL)"
+                    "E-commerce conversion rate",
+                    "Average Order Value (AOV)",
+                    "Return rate %",
+                    "COGS (Cost of Goods Sold)",
+                    "Sampling unit cost",
+                    "Influencer fee structure",
+                    "Payment processing fees"
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
                       <div className="w-1 h-1 rounded-full bg-destructive flex-shrink-0" />
@@ -258,26 +260,26 @@ const PerformanceFramework = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 pdf-section">
         
-        {/* What Changes the Price */}
+        {/* Cost Variables */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Scale className="w-4 h-4 text-primary" />
-                What Changes the Price
+                Cost Variables
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1">
               <ul className="space-y-2.5">
                 {[
-                  "Click costs (AED 6–40)",
-                  "How many people buy (Buying Rate)",
-                  "How good our follow-up ads are",
-                  "How well sampling works",
-                  "Influencer quality",
-                  "Brand reputation",
-                  "Ad tiredness (people getting bored)",
-                  "Seasonality (Ramadan is expensive)"
+                  "Auction intensity (CPC fluctuation)",
+                  "Conversion Rate (CRO efficiency)",
+                  "Retargeting effectiveness",
+                  "Sampling program scale",
+                  "Influencer content quality",
+                  "Brand authority level",
+                  "Ad creative fatigue",
+                  "Seasonality (Ramadan premium)"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
                     <ArrowRight className="w-3 h-3 text-primary" />
@@ -289,25 +291,25 @@ const PerformanceFramework = () => {
           </Card>
         </AnimatedSection>
 
-        {/* How Long Until Prices Settle */}
+        {/* Stabilization Timeline */}
         <AnimatedSection delay={0.4}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Clock className="w-4 h-4 text-primary" />
-                How Long Until Prices Settle
+                Stabilization Timeline
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <p className="text-xs text-muted-foreground mb-4">
-                It takes 90 days for prices to stabilize. Costs are always higher at the start.
+                CAC stabilization is a 90-day process. Early volatility is expected.
               </p>
               
               <div className="space-y-4 relative pl-4 border-l border-border/50 ml-2">
                 {[
-                  { days: "Days 1–30", label: "High Costs", desc: "Learning phase" },
-                  { days: "Days 31–60", label: "Improvement", desc: "Fixing what doesn't work" },
-                  { days: "Days 61–90", label: "Stable", desc: "Running efficiently" }
+                  { days: "Days 1–30", label: "Calibration", desc: "High volatility, data gathering." },
+                  { days: "Days 31–60", label: "Optimization", desc: "Cutting waste, refining targeting." },
+                  { days: "Days 61–90", label: "Stabilization", desc: "Predictable efficiency." }
                 ].map((item, i) => (
                   <div key={i} className="relative">
                     <div className="absolute -left-[21px] top-1.5 w-2.5 h-2.5 rounded-full bg-primary border-2 border-background" />
@@ -322,7 +324,7 @@ const PerformanceFramework = () => {
 
               <div className="bg-primary/5 border border-primary/10 rounded p-3 mt-6">
                 <p className="text-[10px] text-muted-foreground">
-                  Don't judge the results until the 90 days are over.
+                  <strong>Strategic Note:</strong> Performance judgments should be reserved until the 90-day stabilization period is complete.
                 </p>
               </div>
             </CardContent>
@@ -333,16 +335,16 @@ const PerformanceFramework = () => {
 
       <Separator className="my-12 bg-border/50" />
 
-      {/* 10.2 Making Money Back */}
+      {/* ROAS & Attribution */}
       <AnimatedSection className="mb-8 pdf-section">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Money Value</Badge>
-              <h3 className="font-display text-2xl md:text-3xl text-foreground">10.2 Making Money Back (Ad Profit)</h3>
+              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Return on Ad Spend</Badge>
+              <h3 className="font-display text-2xl md:text-3xl text-foreground">ROAS & Attribution</h3>
             </div>
             <p className="text-muted-foreground mt-1 max-w-2xl">
-              We need to measure how much money we make for every dirham we spend.
+              Measuring revenue efficiency across all channels.
             </p>
           </div>
         </div>
@@ -350,23 +352,23 @@ const PerformanceFramework = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 pdf-section">
         
-        {/* Ways to Measure */}
+        {/* Attribution Models */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <LineChart className="w-4 h-4 text-primary" />
-                Ways to Measure
+                Attribution Models
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1">
               <div className="space-y-3">
                 {[
-                  "Direct Sales",
-                  "Influencer Sales",
-                  "Helped Sales (seen ad, bought later)",
-                  "Total Sales (Blended)",
-                  "Sales from Sampling"
+                  "Direct Click Attribution",
+                  "Influencer Code Redemption",
+                  "View-Through (Assisted)",
+                  "Blended ROAS (Total Rev / Total Spend)",
+                  "Sampling LTV Contribution"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 text-xs text-muted-foreground bg-surface border border-border/50 rounded p-2.5">
                     <span className="font-mono text-primary/50 text-[10px]">0{i + 1}</span>
@@ -378,28 +380,27 @@ const PerformanceFramework = () => {
           </Card>
         </AnimatedSection>
 
-        {/* Numbers We Need */}
+        {/* Required KPIs */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <PieChart className="w-4 h-4 text-primary" />
-                Numbers We Need
+                Required KPIs
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4">
                 <div className="grid grid-cols-1 gap-2">
                   {[
-                    "Money per sale",
-                    "Buying rate",
-                    "Average order value",
-                    "Total Customer Value",
-                    "Sampling cost",
-                    "Influencer fees",
-                    "Ad cost",
-                    "Refunds",
-                    "Payment fees"
+                    "Revenue per Visitor (RPV)",
+                    "Conversion Rate (CR)",
+                    "Average Order Value (AOV)",
+                    "Customer Lifetime Value (CLTV)",
+                    "Cost Per Acquisition (CPA)",
+                    "Influencer ROI",
+                    "Return Rate %",
+                    "Net Profit Margin"
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
                       <div className="w-1 h-1 rounded-full bg-primary flex-shrink-0" />
@@ -410,7 +411,7 @@ const PerformanceFramework = () => {
                 
                 <div className="mt-auto bg-surface border border-border rounded p-3">
                   <p className="text-[10px] text-muted-foreground italic">
-                    We need these numbers to know if we are profitable.
+                    These metrics determine the financial viability of scaling.
                   </p>
                 </div>
               </div>
@@ -418,38 +419,38 @@ const PerformanceFramework = () => {
           </Card>
         </AnimatedSection>
 
-        {/* How It Works */}
+        {/* The Funnel Logic */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Shield className="w-4 h-4 text-primary" />
-                How It Works
+                The Funnel Logic
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <ul className="space-y-3 mb-6">
                 <li className="text-xs text-muted-foreground">
-                  <span className="font-semibold text-foreground">Cheap Traffic (AED 6–15):</span> Gets people to know us.
+                  <span className="font-semibold text-foreground">Prospecting (AED 6–15):</span> Drives new traffic.
                 </li>
                 <li className="text-xs text-muted-foreground">
-                  <span className="font-semibold text-foreground">Expensive Traffic (AED 20–40):</span> Gets people to buy.
+                  <span className="font-semibold text-foreground">High Intent (AED 20–40):</span> Captures active demand.
                 </li>
                 <li className="text-xs text-muted-foreground">
-                  <span className="font-semibold text-foreground">Follow-up Ads:</span> Reminds people to buy (cheaper).
+                  <span className="font-semibold text-foreground">Retargeting:</span> Maximizes conversion efficiency.
                 </li>
                 <li className="text-xs text-muted-foreground">
-                  <span className="font-semibold text-foreground">Sampling:</span> Increases purchase probability.
+                  <span className="font-semibold text-foreground">Sampling:</span> Validates product quality.
                 </li>
                 <li className="text-xs text-muted-foreground">
-                  <span className="font-semibold text-foreground">PR & Influencers:</span> Strengthen trust signals.
+                  <span className="font-semibold text-foreground">PR & Authority:</span> Reduces CAC globally.
                 </li>
               </ul>
 
               <div className="mt-auto border-t border-border/50 pt-3">
-                <div className="text-[10px] font-semibold text-foreground uppercase tracking-wider mb-2">How Often We Check</div>
+                <div className="text-[10px] font-semibold text-foreground uppercase tracking-wider mb-2">Reporting Cadence</div>
                 <div className="flex gap-2 text-[10px] text-muted-foreground">
-                  <Badge variant="secondary" className="text-[10px] h-5">Every Week</Badge>
+                  <Badge variant="secondary" className="text-[10px] h-5">Weekly Sprint</Badge>
                   <Badge variant="secondary" className="text-[10px] h-5">Every Month</Badge>
                   <Badge variant="secondary" className="text-[10px] h-5">Every 3 Months</Badge>
                 </div>

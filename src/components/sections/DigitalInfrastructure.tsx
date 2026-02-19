@@ -19,15 +19,14 @@ import {
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
 
 const DigitalInfrastructure = () => (
   <section className="py-24 md:py-32 luxury-container">
     <div className="mb-12">
-      <Badge variant="luxury" className="mb-4">Section 4</Badge>
+      <Badge variant="luxury" className="mb-4">Infrastructure</Badge>
       <SectionTitle
-        title="Digital Infrastructure (Step 2)"
-        subtitle="This step builds the digital environment required before scaling paid acquisition."
+        title="Digital Ecosystem"
+        subtitle="Objective: Deploy High-Performance Acquisition Infrastructure."
       />
     </div>
 
@@ -35,16 +34,17 @@ const DigitalInfrastructure = () => (
       <Card className="glass-card">
         <CardContent className="pt-6">
           <p className="font-body text-muted-foreground leading-relaxed">
-            In a market where the niche segment is valued at approximately USD 400 million, online sales are growing at 5.88 percent annually, and cost per click ranges from AED 6–15 (medium competition) and AED 20–40 (high intent) — digital infrastructure must be prepared to convert high-cost traffic efficiently and protect brand authority.
+            <strong className="text-primary block mb-2">Efficiency First</strong>
+            With high ad costs (AED 6–40 CPC), our site can't just be a catalog. It must be a conversion engine—fast, seamless, and built to turn visitors into buyers while protecting brand prestige.
           </p>
         </CardContent>
       </Card>
     </AnimatedSection>
 
-    {/* 4.1 Website Structure */}
+    {/* UX Architecture */}
     <AnimatedSection className="mb-16">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">4.1</span> Website Structure and Experience
+        UX & Standards
       </h3>
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
@@ -53,18 +53,17 @@ const DigitalInfrastructure = () => (
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
                 <Layout className="w-5 h-5 text-primary" />
-                Structural Layout
+                Conversion Design
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 {[
-                  "Clear homepage with brand story",
-                  "Dedicated product pages",
-                  "Discovery kit page with sampling emphasis",
-                  "Layering education section",
-                  "Cultural alignment content",
-                  "Clear return and trust policies"
+                  "Narrative-Driven Homepage",
+                  "High-Fidelity Product Pages",
+                  "Low-Friction Sampling Funnel",
+                  "Visual Ingredient Education",
+                  "Transparent Logistics/Trust"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-2" />
@@ -79,17 +78,17 @@ const DigitalInfrastructure = () => (
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
                 <Zap className="w-5 h-5 text-primary" />
-                Experience Standards
+                Technical Standards
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 {[
-                  "Clean white space & high-res photography",
-                  "Consistent typography & color palette",
-                  "No discount banners or clutter",
-                  "Flawless mobile experience",
-                  "Optimized page load speed"
+                  "4K Visual Quality",
+                  "Premium Serif/Sans Typography",
+                  "Zero Discount Clutter",
+                  "100% Mobile Optimization",
+                  "<2s Load Time (LCP)"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-2" />
@@ -106,16 +105,17 @@ const DigitalInfrastructure = () => (
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
                 <Globe className="w-5 h-5 text-primary" />
-                Bilingual Execution
+                Localization Strategy
               </CardTitle>
             </CardHeader>
             <CardContent className="flex-1">
               <p className="text-sm text-muted-foreground mb-4">
-                Arabic implementation must be professionally translated, follow right-to-left formatting correctly, and avoid automated translation.
+                Arabic implementation requires professional translation and correct RTL formatting. Automated translation is a trust-killer in this segment.
               </p>
-              <div className="bg-primary/5 p-4 rounded-lg border border-primary/10">
+              <div className="bg-primary/5 p-4 rounded-lg border border-primary/10 mt-auto">
                 <p className="text-xs text-muted-foreground italic">
-                  "Inconsistent Arabic execution signals superficial localization and reduces trust among Emirati Traditionalists."
+                  <strong className="block text-primary mb-1">Insight:</strong>
+                  "Inconsistent Arabic execution signals superficiality to Emirati Traditionalists."
                 </p>
               </div>
             </CardContent>
@@ -124,10 +124,10 @@ const DigitalInfrastructure = () => (
       </div>
     </AnimatedSection>
 
-    {/* 4.2 Conversion Funnel */}
+    {/* Conversion Funnel */}
     <AnimatedSection className="mb-16">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">4.2</span> Conversion Funnel Design
+        Conversion Funnels
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -135,21 +135,21 @@ const DigitalInfrastructure = () => (
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground flex items-center gap-2">
               <ShoppingCart className="w-5 h-5 text-primary" />
-              Full Bottle Funnel
+              Primary Funnel: Full Bottle
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               <div>
-                <div className="text-xs font-semibold text-foreground mb-2">Key Elements:</div>
+                <div className="text-xs font-semibold text-foreground mb-2">Key Drivers:</div>
                 <div className="flex flex-wrap gap-2">
-                  {["Performance credibility", "Unisex positioning", "Layering explanation", "BNPL visibility"].map((tag, i) => (
+                  {["Performance Credibility", "Unisex Positioning", "Layering Guides", "BNPL Options"].map((tag, i) => (
                     <Badge key={i} variant="secondary" className="font-normal text-xs">{tag}</Badge>
                   ))}
                 </div>
               </div>
               <p className="text-sm text-muted-foreground">
-                The checkout process must feel premium, not transactional. Pricing must be clearly positioned within premium tier context.
+                Checkout must feel like a concierge service, not a transaction. Pricing is framed within the context of longevity and concentration.
               </p>
             </div>
           </CardContent>
@@ -159,24 +159,24 @@ const DigitalInfrastructure = () => (
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground flex items-center gap-2">
               <Search className="w-5 h-5 text-primary" />
-              Discovery Kit Funnel
+              Entry Funnel: Discovery Kit
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               <div>
-                <div className="text-xs font-semibold text-foreground mb-2">Benchmarks:</div>
+                <div className="text-xs font-semibold text-foreground mb-2">Target Metrics:</div>
                 <div className="flex gap-4">
                   <div className="bg-secondary/20 px-3 py-2 rounded text-xs">
-                    <span className="font-bold text-primary">35%</span> Digital-to-Physical
+                    <span className="font-bold text-primary">35%</span> Up-sell Rate
                   </div>
                   <div className="bg-secondary/20 px-3 py-2 rounded text-xs">
-                    <span className="font-bold text-primary">13%</span> Immediate Purchase
+                    <span className="font-bold text-primary">13%</span> Immediate Conversion
                   </div>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground">
-                Sampling must be framed as a controlled introduction to performance and a structured scent ritual experience.
+                Sampling is framed as a "Ritual Introduction"—a low-risk entry point designed to validate scent performance.
               </p>
             </div>
           </CardContent>
@@ -186,21 +186,21 @@ const DigitalInfrastructure = () => (
       <div className="mt-6">
         <Card className="glass-card">
           <CardHeader className="pb-2">
-            <CardTitle className="font-display text-base text-muted-foreground uppercase tracking-wider">Funnel Hierarchy</CardTitle>
+            <CardTitle className="font-display text-base text-muted-foreground uppercase tracking-wider">Funnel Segmentation</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
               <div className="p-3 border border-border/50 rounded bg-surface/50">
-                <div className="font-semibold text-foreground mb-1">Awareness</div>
-                <div className="text-muted-foreground text-xs">Sampling emphasis</div>
+                <div className="font-semibold text-foreground mb-1">Awareness Layer</div>
+                <div className="text-muted-foreground text-xs">Focus: Brand Story & Sampling</div>
               </div>
               <div className="p-3 border border-border/50 rounded bg-surface/50">
-                <div className="font-semibold text-foreground mb-1">High-Intent</div>
-                <div className="text-muted-foreground text-xs">Direct purchase path</div>
+                <div className="font-semibold text-foreground mb-1">High-Intent Layer</div>
+                <div className="text-muted-foreground text-xs">Focus: Direct Purchase Path</div>
               </div>
               <div className="p-3 border border-border/50 rounded bg-surface/50">
-                <div className="font-semibold text-foreground mb-1">Retargeting</div>
-                <div className="text-muted-foreground text-xs">Authority reinforcement</div>
+                <div className="font-semibold text-foreground mb-1">Retention Layer</div>
+                <div className="text-muted-foreground text-xs">Focus: Authority Reinforcement</div>
               </div>
             </div>
           </CardContent>
@@ -211,7 +211,7 @@ const DigitalInfrastructure = () => (
     {/* 4.3 Payment */}
     <AnimatedSection className="mb-16">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">4.3</span> Payment Integration
+        <span className="text-primary">2.3</span> Transaction Infrastructure
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -219,11 +219,11 @@ const DigitalInfrastructure = () => (
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <CreditCard className="w-5 h-5 text-primary" />
-              Digital & Cards
+              Digital Payments
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-sm text-muted-foreground">Standard card processing and digital wallet support (Apple Pay/Google Pay).</p>
+            <p className="text-sm text-muted-foreground">Seamless integration of major cards and digital wallets (Apple Pay/Google Pay).</p>
           </CardContent>
         </Card>
 
@@ -231,12 +231,12 @@ const DigitalInfrastructure = () => (
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <RefreshCcw className="w-5 h-5 text-primary" />
-              BNPL
+              Buy Now, Pay Later
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-sm text-muted-foreground mb-3">Supports Gen-Z buyers and higher order values.</p>
-            <Badge variant="outline" className="text-[10px] border-primary/20 text-muted-foreground">Fees: 2-9%</Badge>
+            <p className="text-sm text-muted-foreground mb-3">Critical for Gen-Z acquisition and increasing Average Order Value (AOV).</p>
+            <Badge variant="outline" className="text-[10px] border-primary/20 text-muted-foreground">Est. Fees: 2-9%</Badge>
           </CardContent>
         </Card>
 
@@ -244,11 +244,11 @@ const DigitalInfrastructure = () => (
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <MousePointerClick className="w-5 h-5 text-primary" />
-              COD
+              Cash on Delivery (COD)
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-sm text-muted-foreground mb-3">Premium segment usage: 15-25%. Increases reach but requires monitoring.</p>
+            <p className="text-sm text-muted-foreground mb-3">Regional necessity. Anticipate 15-25% volume. Requires strict verification protocols.</p>
           </CardContent>
         </Card>
       </div>
@@ -257,7 +257,7 @@ const DigitalInfrastructure = () => (
     {/* 4.4 Analytics */}
     <AnimatedSection className="mb-16">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">4.4</span> Analytics & Tracking
+        <span className="text-primary">2.4</span> Data & Analytics Layer
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -265,23 +265,23 @@ const DigitalInfrastructure = () => (
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <BarChart3 className="w-5 h-5 text-primary" />
-              Tracking Infrastructure
+              Event Tracking
             </CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 mb-4">
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle2 className="w-4 h-4 text-primary" /> Platform pixels (Meta, Google, TikTok)
+                <CheckCircle2 className="w-4 h-4 text-primary" /> Full Pixel Suite (Meta, Google, TikTok)
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle2 className="w-4 h-4 text-primary" /> Conversion & Add-to-cart events
+                <CheckCircle2 className="w-4 h-4 text-primary" /> Deep-Funnel Events (Add-to-Cart, Initiate Checkout)
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle2 className="w-4 h-4 text-primary" /> Sampling tracking
+                <CheckCircle2 className="w-4 h-4 text-primary" /> Sampling-Specific Conversions
               </li>
             </ul>
             <p className="text-xs text-muted-foreground italic border-l-2 border-primary pl-3">
-              Incorrect event firing distorts optimization and inflates acquisition cost.
+              Precision in event firing is non-negotiable for algorithmic optimization.
             </p>
           </CardContent>
         </Card>
@@ -290,18 +290,18 @@ const DigitalInfrastructure = () => (
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <Database className="w-5 h-5 text-primary" />
-              Audience Pools
+              Audience Architecture
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
               {[
-                "All website visitors",
-                "Product page visitors",
-                "Cart viewers",
-                "Sampling purchasers",
-                "Video viewers (>50%)",
-                "Ramadan seasonal audiences"
+                "All Visitors (30/90/180 Days)",
+                "Product Viewers",
+                "Cart Abandoners",
+                "Sample Purchasers",
+                "Video Viewers (>50%)",
+                "Seasonal (Ramadan) Lists"
               ].map((tag, i) => (
                 <Badge key={i} variant="secondary" className="font-normal text-xs">{tag}</Badge>
               ))}
@@ -314,7 +314,7 @@ const DigitalInfrastructure = () => (
     {/* 4.5 CRM */}
     <AnimatedSection>
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">4.5</span> CRM Setup
+        CRM & Lifecycle
       </h3>
       
       <Card className="glass-card">
@@ -323,28 +323,28 @@ const DigitalInfrastructure = () => (
             <div className="space-y-2">
               <div className="flex items-center gap-2 font-semibold text-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                Email Capture
+                Acquisition
               </div>
               <p className="text-xs text-muted-foreground">
-                Must occur through sampling, checkout, and exit-intent. Messaging must reflect prestige tone.
+                Capture via sampling, checkout, and exit-intent. Tone: Exclusive, not promotional.
               </p>
             </div>
             <div className="space-y-2">
               <div className="flex items-center gap-2 font-semibold text-foreground">
                 <RefreshCcw className="w-4 h-4 text-primary" />
-                Post-Sampling
+                Nurture
               </div>
               <p className="text-xs text-muted-foreground">
-                Structured follow-up required. Automation must include performance reinforcement and layering education.
+                Automated flows for post-sampling conversion. Focus on education and layering rituals.
               </p>
             </div>
             <div className="space-y-2">
               <div className="flex items-center gap-2 font-semibold text-foreground">
                 <Lock className="w-4 h-4 text-primary" />
-                Ramadan Reactivation
+                Retention
               </div>
               <p className="text-xs text-muted-foreground">
-                Pre-built flows for awareness, gifting, and limited seasonal emphasis.
+                Specialized flows for Ramadan reactivation, gifting, and limited releases.
               </p>
             </div>
           </div>

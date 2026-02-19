@@ -2,22 +2,12 @@ import AnimatedSection from "@/components/AnimatedSection";
 import SectionTitle from "@/components/SectionTitle";
 import { 
   TrendingUp, 
-  BarChart3, 
   MapPin, 
   Store, 
   MousePointerClick, 
-  Users, 
-  ShoppingBag, 
   Eye, 
-  Globe,
   ArrowUpRight,
-  AlertCircle,
   Target,
-  Shield,
-  Check,
-  Compass,
-  Crosshair,
-  Crown
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -26,43 +16,55 @@ import { Separator } from "@/components/ui/separator";
 const MarketContext = () => (
   <section className="py-24 md:py-32 luxury-container">
     <div className="mb-12">
-      <Badge variant="luxury" className="mb-4">Section 2</Badge>
+      <Badge variant="luxury" className="mb-4">Market Facts</Badge>
       <SectionTitle
-        title="Market Facts"
+        title="Market Reality"
         subtitle="This section is based on real UAE market data. No guesses, just facts."
       />
     </div>
 
-    {/* 2.1 */}
+    {/* Market Size */}
     <AnimatedSection className="mb-16 pdf-section">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">2.1</span> Market Size
+        Market Size & Potential
       </h3>
       <Card className="glass-card">
         <CardContent className="pt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                The UAE perfume market is worth about <strong className="text-foreground">USD 1.37 billion</strong>. The niche (luxury) part is about <strong className="text-foreground">USD 400 million</strong> and growing 8% every year.
-              </p>
-              <div className="bg-primary/5 border border-primary/10 p-4 rounded-lg">
-                <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">The Reality</div>
+              <div className="space-y-2">
+                <div className="flex justify-between items-baseline border-b border-white/10 pb-2">
+                  <span className="text-sm text-muted-foreground">Total Market Value</span>
+                  <span className="text-xl font-bold text-foreground">USD 1.37 Billion</span>
+                </div>
+                <div className="flex justify-between items-baseline border-b border-white/10 pb-2">
+                  <span className="text-sm text-muted-foreground">Niche Segment</span>
+                  <span className="text-xl font-bold text-primary">USD 400 Million</span>
+                </div>
+                <div className="flex justify-between items-baseline border-b border-white/10 pb-2">
+                  <span className="text-sm text-muted-foreground">YoY Growth (Niche)</span>
+                  <span className="text-xl font-bold text-green-400">+8.0%</span>
+                </div>
+              </div>
+              
+              <div className="bg-primary/5 border border-primary/10 p-4 rounded-lg mt-6">
+                <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Market Reality</div>
                 <p className="text-sm text-muted-foreground italic">
-                  "There is a lot of money here, but you have to look like a luxury brand to get it."
+                  "High liquidity market demanding luxury signaling. Capital exists, but flows strictly to perceived authority."
                 </p>
               </div>
             </div>
             <div className="space-y-4">
               <div className="font-semibold text-foreground flex items-center gap-2">
-                <AlertCircle className="w-4 h-4 text-primary" />
-                What This Means
+                <Target className="w-4 h-4 text-primary" />
+                Strategic Implications
               </div>
               <ul className="space-y-3">
                 {[
-                  "Niche is big: It's almost 1/3 of the market.",
-                  "Luxury is growing: Cheap perfume is not.",
-                  "You need to be good: People expect quality.",
-                  "Stand out: Don't just be another Sandalwood brand."
+                  "Niche Dominance: ~30% of total market value",
+                  "Divergent Growth: Mass market stagnating; Luxury accelerating",
+                  "Quality Threshold: High sophistication demands performance",
+                  "Differentiation: Generic positioning will fail"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-2" />
@@ -76,26 +78,26 @@ const MarketContext = () => (
       </Card>
     </AnimatedSection>
 
-    {/* 2.2 */}
+    {/* Growth Trajectory */}
     <AnimatedSection className="mb-16 pdf-section">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">2.2</span> Luxury vs Regular Growth
+        Growth Trajectory: Mass vs. Luxury
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <Card className="glass-card">
+        <Card className="glass-card opacity-80">
           <CardContent className="pt-6 flex flex-col items-center justify-center text-center h-full">
             <div className="font-display text-4xl font-bold text-muted-foreground mb-2">2.7%</div>
-            <div className="font-body text-xs uppercase tracking-wider text-muted-foreground">Regular Perfume Growth</div>
-            <p className="text-xs text-muted-foreground mt-4 px-4">Growing slowly. Too much competition on price.</p>
+            <div className="font-body text-xs uppercase tracking-wider text-muted-foreground">Mass Market Growth</div>
+            <p className="text-xs text-muted-foreground mt-4 px-4">Saturated. Price-war driven. Low margin.</p>
           </CardContent>
         </Card>
         
         <Card className="glass-card border-gold/50 bg-gold/5 shadow-gold/10">
           <CardContent className="pt-6 flex flex-col items-center justify-center text-center h-full">
             <div className="font-display text-4xl font-bold text-primary mb-2">8.0%</div>
-            <div className="font-body text-xs uppercase tracking-wider text-primary">Luxury Perfume Growth</div>
-            <p className="text-xs text-muted-foreground mt-4 px-4">People are spending more on expensive perfume.</p>
+            <div className="font-body text-xs uppercase tracking-wider text-primary">Luxury Niche Growth</div>
+            <p className="text-xs text-muted-foreground mt-4 px-4">Expanding. Premiumization trend. High margin.</p>
           </CardContent>
         </Card>
       </div>
@@ -109,10 +111,10 @@ const MarketContext = () => (
       </Card>
     </AnimatedSection>
 
-    {/* 2.3 */}
+    {/* Revenue Concentration */}
     <AnimatedSection className="mb-16 pdf-section">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">2.3</span> Where the Money Is
+        Revenue Concentration
       </h3>
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -167,12 +169,12 @@ const MarketContext = () => (
       </div>
     </AnimatedSection>
 
-    {/* 2.4 & 2.5 Grid */}
+    {/* Channel & Costs Grid */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 pdf-section">
-      {/* 2.4 */}
+      {/* Channel Distribution */}
       <AnimatedSection>
         <h3 className="font-display text-xl font-semibold mb-6 text-foreground flex items-center gap-3">
-          <span className="text-primary">2.4</span> Stores vs Online
+          Channel Distribution
         </h3>
         <Card className="glass-card h-full">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -192,10 +194,10 @@ const MarketContext = () => (
         </Card>
       </AnimatedSection>
 
-      {/* 2.5 */}
+      {/* Acquisition Economics */}
       <AnimatedSection>
         <h3 className="font-display text-xl font-semibold mb-6 text-foreground flex items-center gap-3">
-          <span className="text-primary">2.5</span> Ad Costs
+          Acquisition Economics
         </h3>
         <Card className="glass-card h-full">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -224,10 +226,10 @@ const MarketContext = () => (
       </AnimatedSection>
     </div>
 
-    {/* 2.6 Influencer */}
+    {/* Influencer Benchmarks */}
     <AnimatedSection className="mb-16 pdf-section">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">2.6</span> Influencer Results
+        Influencer Benchmarks
       </h3>
       
       <Card className="glass-card overflow-hidden">
@@ -266,10 +268,10 @@ const MarketContext = () => (
       </Card>
     </AnimatedSection>
 
-    {/* 2.7 Sampling */}
+    {/* Sampling Economics */}
     <AnimatedSection className="mb-16">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">2.7</span> Sampling Conversion Benchmarks
+        Sampling Economics
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -297,10 +299,10 @@ const MarketContext = () => (
       </div>
     </AnimatedSection>
 
-    {/* 2.8 Visibility */}
+    {/* Visibility Requirements */}
     <AnimatedSection>
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">2.8</span> Getting Seen
+        Visibility Requirements
       </h3>
       
       <Card className="glass-card">
@@ -353,10 +355,10 @@ const MarketContext = () => (
       </Card>
     </AnimatedSection>
 
-    {/* 2.9 Competitive Positioning Map */}
+    {/* Competitive Positioning */}
     <AnimatedSection className="mt-16 mb-16 pdf-section">
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
-        <span className="text-primary">2.9</span> Competitive Positioning Map
+        Competitive Positioning
       </h3>
       
       <div className="bg-surface border border-border rounded-lg p-6 mb-8">
@@ -406,121 +408,9 @@ const MarketContext = () => (
                          <div className="text-[9px] text-primary mt-1 text-center font-medium whitespace-nowrap">Upper-Mid Prestige</div>
                     </div>
                 </div>
-
-                <div className="absolute top-16 left-24 text-[10px] text-muted-foreground text-center bg-background/80 p-1 rounded border border-border/50">
-                    Ultra-Heritage
-                </div>
-
-                <div className="absolute bottom-24 right-16 text-[10px] text-muted-foreground text-center bg-background/80 p-1 rounded border border-border/50">
-                    Regional Oud
-                </div>
-
-                <div className="absolute bottom-24 left-24 text-[10px] text-muted-foreground text-center bg-background/80 p-1 rounded border border-border/50">
-                    Mass Designer
-                </div>
-            </div>
-
-            {/* Positioning Text */}
-            <div className="space-y-6 flex flex-col justify-center">
-                <div>
-                    <h5 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
-                        <Target className="w-4 h-4 text-primary" />
-                        Positioning Objective
-                    </h5>
-                    <div className="bg-primary/5 border border-primary/10 rounded-lg p-4 mb-4">
-                        <p className="text-sm font-medium text-foreground mb-2">Your brand must sit in:</p>
-                        <ul className="space-y-2">
-                             <li className="flex items-center gap-2 text-xs text-muted-foreground">
-                                <Check className="w-3 h-3 text-primary" /> Upper-mid prestige tier
-                             </li>
-                             <li className="flex items-center gap-2 text-xs text-muted-foreground">
-                                <Check className="w-3 h-3 text-primary" /> High performance credibility quadrant
-                             </li>
-                        </ul>
-                    </div>
-                    
-                    <div className="bg-destructive/5 border border-destructive/10 rounded-lg p-4">
-                        <p className="text-sm font-medium text-destructive mb-2">NOT in:</p>
-                        <ul className="space-y-2">
-                             {["Mass designer territory", "Discount niche territory", "Influencer-only trend category"].map((item, i) => (
-                                <li key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
-                                    <div className="w-1 h-1 rounded-full bg-destructive" />
-                                    {item}
-                                </li>
-                             ))}
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
       </div>
-
-      <h4 className="font-display text-lg text-foreground mb-4">Competitive Reference Clusters</h4>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-        {[
-            {
-                title: "Ultra-Heritage",
-                features: ["High authority", "Very high price", "Strong retail presence"],
-                icon: Crown
-            },
-            {
-                title: "Regional Oud",
-                features: ["High cultural alignment", "Strong performance expectation"],
-                icon: MapPin
-            },
-            {
-                title: "Designer Crossover",
-                features: ["High brand awareness", "Lower niche credibility"],
-                icon: ShoppingBag
-            },
-            {
-                title: "Digital-Only",
-                features: ["Lower authority", "High digital aggression"],
-                icon: Globe
-            }
-        ].map((cluster, i) => (
-            <Card key={i} className="glass-card h-full">
-                <CardHeader className="pb-3 pt-4 px-4">
-                    <CardTitle className="text-sm font-semibold flex items-center gap-2">
-                        <cluster.icon className="w-4 h-4 text-primary" />
-                        {cluster.title}
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="px-4 pb-4">
-                    <ul className="space-y-1">
-                        {cluster.features.map((feat, j) => (
-                            <li key={j} className="text-[10px] text-muted-foreground flex items-start gap-1.5">
-                                <div className="w-1 h-1 rounded-full bg-primary/50 mt-1.5 flex-shrink-0" />
-                                {feat}
-                            </li>
-                        ))}
-                    </ul>
-                </CardContent>
-            </Card>
-        ))}
-      </div>
-
-      <Card className="bg-primary text-primary-foreground border-primary shadow-lg">
-        <CardContent className="pt-6">
-             <div className="flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
-                 <div>
-                     <h4 className="font-display text-lg font-bold mb-2 flex items-center gap-2">
-                        <Target className="w-5 h-5" /> Your Strategic Position
-                     </h4>
-                     <p className="text-sm text-primary-foreground/90">
-                        Your brand should be positioned as a <strong>Premium Niche Sandalwood Specialist</strong>.
-                     </p>
-                 </div>
-                 <div className="flex flex-wrap gap-2 md:justify-end">
-                    {["Performance-first", "Culturally aligned", "Modern elite positioning", "Unisex orientation", "Clear lane prevents dilution"].map((item, i) => (
-                        <div key={i} className="bg-white/10 rounded px-3 py-1.5 text-xs font-medium text-center border border-white/10">
-                            {item}
-                        </div>
-                    ))}
-                 </div>
-             </div>
-        </CardContent>
-      </Card>
     </AnimatedSection>
   </section>
 );

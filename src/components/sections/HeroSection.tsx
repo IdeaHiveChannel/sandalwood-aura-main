@@ -3,6 +3,7 @@ import { useRef } from "react";
 import heroBottle from "@/assets/hero-bottle.jpg";
 
 const HeroSection = () => {
+  console.log("HeroSection rendering");
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -14,7 +15,7 @@ const HeroSection = () => {
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section ref={ref} className="relative h-screen w-full overflow-hidden bg-background flex items-center justify-center">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-20">
       {/* Parallax Background */}
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10" />

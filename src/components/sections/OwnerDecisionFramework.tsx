@@ -96,9 +96,9 @@ const OwnerDecisionFramework = () => {
     <div className="max-w-6xl mx-auto relative z-10">
       <div className="mb-8 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-4 w-full sm:w-auto">
-          <span className="font-body text-xs tracking-[0.3em] uppercase text-primary">Section 11</span>
+          <span className="font-body text-xs tracking-[0.3em] uppercase text-primary">Strategic Decisions</span>
           <div className="h-px bg-primary/30 w-12" />
-          <Badge variant="outline" className="border-primary/30 text-muted-foreground font-normal tracking-wider hidden sm:inline-flex">YEAR 1 — UAE ONLY</Badge>
+          <Badge variant="outline" className="border-primary/30 text-muted-foreground font-normal tracking-wider hidden sm:inline-flex">EXECUTIVE ACTION REQUIRED</Badge>
         </div>
         
         <div className="flex items-center gap-4 w-full sm:w-auto">
@@ -176,10 +176,10 @@ const OwnerDecisionFramework = () => {
           <div>
             <div className="flex items-center gap-3 mb-2">
               <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Critical Decision</Badge>
-              <h3 className="font-display text-2xl md:text-3xl text-foreground">11.1 Choose Your Budget</h3>
+              <h3 className="font-display text-2xl md:text-3xl text-foreground">Strategic Investment Tiers</h3>
             </div>
             <p className="text-muted-foreground mt-1 max-w-2xl">
-              Select one of these three plans. This decides how much we spend and how fast we grow.
+              Select the growth trajectory that aligns with your vision. Each tier unlocks a different pace of market penetration.
             </p>
           </div>
         </div>
@@ -426,11 +426,11 @@ const OwnerDecisionFramework = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">How Pushy?</Badge>
-              <h3 className="font-display text-2xl md:text-3xl text-foreground">11.2 Online Ad Strategy</h3>
+              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Market Penetration</Badge>
+              <h3 className="font-display text-2xl md:text-3xl text-foreground">Digital Advertising Strategy</h3>
             </div>
             <p className="text-muted-foreground mt-1 max-w-2xl">
-              We need to decide how hard to fight for attention in the UAE market.
+              Defining the intensity of our market entry.
             </p>
           </div>
         </div>
@@ -444,22 +444,22 @@ const OwnerDecisionFramework = () => {
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Signal className="w-4 h-4 text-primary" />
-                Level 1: Getting Noticed
+                Phase 1: Awareness
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4">
                 <div className="bg-surface border border-border/50 rounded p-2.5 mb-2">
-                  <div className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Focus</div>
-                  <div className="text-sm font-bold text-foreground">AED 6–15 per Click</div>
+                  <div className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">CPC Target</div>
+                  <div className="text-sm font-bold text-foreground">AED 6–15</div>
                 </div>
                 <ul className="space-y-2">
                   {[
-                    "Reaching more people",
-                    "Cheaper traffic",
-                    "Takes longer to get a sale",
-                    "Building a list of interested people",
-                    "Introducing samples"
+                    "Broad reach maximization",
+                    "Cost-efficient traffic",
+                    "Longer conversion cycle",
+                    "Audience building",
+                    "Sampling introduction"
                   ].map((item, i) => (
                     <li key={i} className="text-xs text-muted-foreground flex items-center gap-2">
                       <div className="w-1 h-1 rounded-full bg-primary flex-shrink-0" />
@@ -469,7 +469,7 @@ const OwnerDecisionFramework = () => {
                 </ul>
                 <div className="mt-auto pt-4 border-t border-border/50">
                   <p className="text-[10px] text-muted-foreground italic mb-3">
-                    Good for starting out and building familiarity.
+                    Foundational visibility strategy.
                   </p>
                   <Button 
                     className="w-full h-8 text-xs" 
@@ -490,22 +490,22 @@ const OwnerDecisionFramework = () => {
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Crosshair className="w-4 h-4 text-primary" />
-                Level 2: Winning New Customers
+                Phase 2: Acquisition
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4">
                 <div className="bg-surface border border-border/50 rounded p-2.5 mb-2">
-                  <div className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Focus</div>
-                  <div className="text-sm font-bold text-foreground">AED 20–40 per Click</div>
+                  <div className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">CPC Target</div>
+                  <div className="text-sm font-bold text-foreground">AED 20–40</div>
                 </div>
                 <ul className="space-y-2">
                   {[
-                    "People ready to buy",
-                    "High competition",
-                    "More expensive",
-                    "Needs strong brand trust",
-                    "Needs a great website"
+                    "High-intent targeting",
+                    "Competitive bidding",
+                    "Premium placement",
+                    "Trust-based messaging",
+                    "Conversion focus"
                   ].map((item, i) => (
                     <li key={i} className="text-xs text-muted-foreground flex items-center gap-2">
                       <div className="w-1 h-1 rounded-full bg-primary flex-shrink-0" />
@@ -515,7 +515,7 @@ const OwnerDecisionFramework = () => {
                 </ul>
                 <div className="mt-auto pt-4 border-t border-border/50">
                   <p className="text-[10px] text-muted-foreground italic mb-3">
-                    Expensive if the brand isn't trusted yet.
+                    Aggressive market capture.
                   </p>
                   <Button 
                     className="w-full h-8 text-xs" 
@@ -536,22 +536,22 @@ const OwnerDecisionFramework = () => {
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Layers className="w-4 h-4 text-primary" />
-                Level 3: Bringing Them Back
+                Phase 3: Retention
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4">
                 <div className="bg-surface border border-border/50 rounded p-2.5 mb-2">
-                  <div className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Focus</div>
-                  <div className="text-sm font-bold text-foreground">Follow-up Ads</div>
+                  <div className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Strategy</div>
+                  <div className="text-sm font-bold text-foreground">Retargeting Loops</div>
                 </div>
                 <ul className="space-y-2">
                   {[
-                    "Website visitors",
-                    "People who looked at products",
-                    "People who got samples",
-                    "Abandoned carts",
-                    "Influencer fans"
+                    "Website visitor recovery",
+                    "Product view retargeting",
+                    "Sample recipient conversion",
+                    "Cart abandonment recovery",
+                    "LTV maximization"
                   ].map((item, i) => (
                     <li key={i} className="text-xs text-muted-foreground flex items-center gap-2">
                       <div className="w-1 h-1 rounded-full bg-primary flex-shrink-0" />
@@ -561,14 +561,14 @@ const OwnerDecisionFramework = () => {
                 </ul>
                 <div className="mt-auto pt-4 border-t border-border/50">
                   <p className="text-[10px] text-muted-foreground italic mb-3">
-                    Cheaper and very effective for sales.
+                    High-ROI efficiency layer.
                   </p>
                   <Button 
                     className="w-full h-8 text-xs" 
                     variant={selectedDigital === "Follow-up Focus" ? "default" : "outline"}
                     onClick={() => setSelectedDigital("Follow-up Focus")}
                   >
-                    {selectedDigital === "Follow-up Focus" ? "Selected" : "Select Follow-up"}
+                    {selectedDigital === "Follow-up Focus" ? "Selected" : "Select Retention"}
                   </Button>
                 </div>
               </div>
@@ -608,11 +608,11 @@ const OwnerDecisionFramework = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Influencer Types</Badge>
-              <h3 className="font-display text-2xl md:text-3xl text-foreground">11.3 Influencer Plan</h3>
+              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Partnership Mix</Badge>
+              <h3 className="font-display text-2xl md:text-3xl text-foreground">Influencer Partnership Strategy</h3>
             </div>
             <p className="text-muted-foreground mt-1 max-w-2xl">
-              Who we work with changes how people see us. No celebrities in Year 1.
+              Defining the voice of the brand through strategic partnerships.
             </p>
           </div>
         </div>
@@ -626,18 +626,18 @@ const OwnerDecisionFramework = () => {
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <BarChart className="w-4 h-4 text-primary" />
-                Costs & Returns
+                Investment & Returns
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
               <div className="space-y-4">
                 <div className="space-y-2">
                   {[
-                    { label: "Tiny (Nano)", value: "AED 500–2,000" },
-                    { label: "Small (Micro)", value: "AED 2,000–5,000" },
-                    { label: "Medium (Mid-tier)", value: "AED 5,000–20,000" },
-                    { label: "Large (Macro)", value: "AED 15,000–50,000+" },
-                    { label: "Boosting", value: "15–20% of spend" }
+                    { label: "Nano (Niche)", value: "AED 500–2k" },
+                    { label: "Micro (Focused)", value: "AED 2k–5k" },
+                    { label: "Mid-tier (Growth)", value: "AED 5k–20k" },
+                    { label: "Macro (Scale)", value: "AED 15k–50k+" },
+                    { label: "Media Boosting", value: "15–20% allocation" }
                   ].map((item, i) => (
                     <div key={i} className="flex justify-between items-center text-xs border-b border-border/50 pb-2 last:border-0">
                       <span className="text-muted-foreground">{item.label}</span>
@@ -646,13 +646,13 @@ const OwnerDecisionFramework = () => {
                   ))}
                 </div>
                 <div className="bg-surface border border-border rounded p-3">
-                  <div className="text-[10px] font-semibold text-foreground uppercase tracking-wider mb-2">Goal Return</div>
+                  <div className="text-[10px] font-semibold text-foreground uppercase tracking-wider mb-2">Target ROAS</div>
                   <div className="flex justify-between items-center text-xs">
-                    <span className="text-muted-foreground">Average</span>
+                    <span className="text-muted-foreground">Baseline</span>
                     <span className="font-bold text-primary">6.5x</span>
                   </div>
                   <div className="flex justify-between items-center text-xs mt-1">
-                    <span className="text-muted-foreground">High-Perf</span>
+                    <span className="text-muted-foreground">High-Performance</span>
                     <span className="font-bold text-primary">8.4x</span>
                   </div>
                 </div>
@@ -665,24 +665,24 @@ const OwnerDecisionFramework = () => {
         <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
             {
-              title: "Real People",
+              title: "Micro-Influencer Focus",
               focus: "Nano & Micro",
-              pros: "Trustworthy, Good engagement",
-              cons: "Slower fame",
+              pros: "High authenticity, high engagement",
+              cons: "Slower reach accumulation",
               fit: "Option 1"
             },
             {
-              title: "Balanced Mix",
+              title: "Hybrid Strategy",
               focus: "Micro & Mid-tier",
-              pros: "Good reach & trust",
-              cons: "Moderate cost",
+              pros: "Balanced reach & trust",
+              cons: "Moderate investment",
               fit: "Option 2"
             },
             {
-              title: "Famous Faces",
+              title: "Macro Scale",
               focus: "Big Influencers",
-              pros: "Fast fame",
-              cons: "High risk if it fails",
+              pros: "Rapid brand awareness",
+              cons: "Higher risk profile",
               fit: "Option 3"
             }
           ].map((model, i) => (
@@ -718,7 +718,7 @@ const OwnerDecisionFramework = () => {
                       variant={selectedInfluencer === model.title ? "default" : "outline"}
                       onClick={() => setSelectedInfluencer(model.title)}
                     >
-                      {selectedInfluencer === model.title ? "Selected" : "Select Model"}
+                      {selectedInfluencer === model.title ? "Selected" : "Select Strategy"}
                     </Button>
                   </div>
                 </CardContent>
@@ -736,12 +736,11 @@ const OwnerDecisionFramework = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">In-Store Presence</Badge>
-              <h3 className="font-display text-2xl md:text-3xl text-foreground">11.4 Real-World Events</h3>
+              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Physical Touchpoints</Badge>
+              <h3 className="font-display text-2xl md:text-3xl text-foreground">Experiential Activation</h3>
             </div>
             <p className="text-muted-foreground mt-1 max-w-2xl">
-              In the UAE, people like to smell perfumes before buying. 
-              Since almost 60% of sales happen in stores, not having a physical presence can slow us down.
+              Bridging the digital and physical worlds to drive trial and conversion.
             </p>
           </div>
         </div>
@@ -751,10 +750,10 @@ const OwnerDecisionFramework = () => {
       <AnimatedSection delay={0.1} className="mb-8 pdf-section">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { label: "Prime Mall Pop-up", value: "~AED 3,000", sub: "per day" },
-            { label: "Fashion Ave Media", value: "~AED 180,000", sub: "per month" },
-            { label: "Dubai Mall Visitors", value: "100 Million+", sub: "annual" },
-            { label: "MOE Visitors", value: "~42 Million", sub: "annual" }
+            { label: "Pop-up Entry", value: "~AED 3k", sub: "per day" },
+            { label: "Premium Media", value: "~AED 180k", sub: "per month" },
+            { label: "Dubai Mall Footfall", value: "100M+", sub: "annual" },
+            { label: "MOE Footfall", value: "~42M", sub: "annual" }
           ].map((stat, i) => (
             <Card key={i} className="glass-card/50">
               <CardContent className="p-4 text-center">
@@ -770,31 +769,31 @@ const OwnerDecisionFramework = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 pdf-section">
         {[
           {
-            title: "Option 1: No Events",
-            desc: "Only online.",
-            pros: "Cheapest",
-            cons: "Harder to trust",
+            title: "Pure Digital Play",
+            desc: "Zero physical footprint.",
+            pros: "Capital preservation",
+            cons: "Lower trust barrier",
             icon: Globe
           },
           {
-            title: "Option 2: Short Pop-Up",
-            desc: "5–14 Days.",
-            pros: "Great for content",
-            cons: "Medium cost",
+            title: "Tactical Activation",
+            desc: "5–14 Day Pop-up.",
+            pros: "Content generation",
+            cons: "Moderate outlay",
             icon: Store
           },
           {
-            title: "Option 3: Month-Long",
-            desc: "30 Days (Ramadan).",
+            title: "Strategic Presence",
+            desc: "30-Day Ramadan Pop-up.",
             pros: "High visibility",
-            cons: "High commitment",
+            cons: "Significant commitment",
             icon: MapPin
           },
           {
-            title: "Option 4: Big Mall Ads",
-            desc: "Huge screens.",
-            pros: "Maximum fame",
-            cons: "Very expensive",
+            title: "Dominance Campaign",
+            desc: "Large-scale Media.",
+            pros: "Maximum brand equity",
+            cons: "High capital requirement",
             icon: Radio
           }
         ].map((option, i) => (
@@ -862,11 +861,11 @@ const OwnerDecisionFramework = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Seasonal Peak</Badge>
-              <h3 className="font-display text-2xl md:text-3xl text-foreground">11.5 Ramadan Budget Plan</h3>
+              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">High Season Strategy</Badge>
+              <h3 className="font-display text-2xl md:text-3xl text-foreground">Ramadan Capital Allocation</h3>
             </div>
             <p className="text-muted-foreground mt-1 max-w-2xl">
-              Ramadan is the biggest time for perfume sales. People buy gifts and use more perfume.
+              Optimizing spend during the region's most critical retail period.
             </p>
           </div>
         </div>
@@ -880,12 +879,12 @@ const OwnerDecisionFramework = () => {
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Calendar className="w-4 h-4 text-primary" />
-                1. Normal Spend
+                Baseline Maintenance
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <ul className="space-y-2 mb-4">
-                {["Keep doing what we are doing", "No extra spending", "Focus on current ads"].map((item, i) => (
+                {["Consistent ad spend", "No seasonal increase", "Focus on existing funnel"].map((item, i) => (
                   <li key={i} className="text-xs text-muted-foreground flex items-center gap-2">
                     <div className="w-1 h-1 rounded-full bg-primary flex-shrink-0" />
                     {item}
@@ -898,7 +897,7 @@ const OwnerDecisionFramework = () => {
                   variant={selectedRamadan === "Standard" ? "default" : "outline"}
                   onClick={() => setSelectedRamadan("Standard")}
                 >
-                  {selectedRamadan === "Standard" ? "Selected" : "Select Normal"}
+                  {selectedRamadan === "Standard" ? "Selected" : "Select Baseline"}
                 </Button>
               </div>
             </CardContent>
@@ -912,12 +911,12 @@ const OwnerDecisionFramework = () => {
             <CardHeader className="pb-4 border-b border-border/50 relative">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <TrendingUp className="w-4 h-4 text-primary" />
-                2. Boosted Spend
+                Strategic Surge
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col relative">
               <ul className="space-y-2 mb-4">
-                {["More influencers", "More samples", "More follow-up ads", "Slightly higher ad costs"].map((item, i) => (
+                {["Influencer activation", "Sampling acceleration", "Retargeting boost", "Bid optimization"].map((item, i) => (
                   <li key={i} className="text-xs text-muted-foreground flex items-center gap-2">
                     <div className="w-1 h-1 rounded-full bg-primary flex-shrink-0" />
                     {item}

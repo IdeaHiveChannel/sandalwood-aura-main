@@ -15,6 +15,7 @@ import Footer from "@/components/Footer";
 import DownloadButton from "@/components/DownloadButton";
 
 const Index = () => {
+  console.log("Index page rendering");
   return (
     <div className="bg-background min-h-screen">
       <DownloadButton />

@@ -2,7 +2,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import SectionTitle from "@/components/SectionTitle";
 import { 
   Building, Camera, Megaphone, Globe, Users, Check, AlertTriangle, 
-  Database, Layout, ArrowRight, Shield, CreditCard, Mail, Scale, Crown, Target, Gem, TrendingUp, Activity, Calculator, PieChart, Layers, Clock, CalendarClock, CheckCircle2
+  Database, Layout, ArrowRight, Shield, CreditCard, Mail, Scale, Crown, Target, Gem, TrendingUp, Activity, Calculator, PieChart, Layers, Clock, CalendarClock, CheckCircle2, Gift
 } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -16,7 +16,7 @@ const MarketingBudget = () => (
 
     <div className="max-w-6xl mx-auto relative z-10">
       <div className="mb-8 flex items-center gap-4">
-        <span className="font-body text-xs tracking-[0.3em] uppercase text-primary">Section 9</span>
+        <span className="font-body text-xs tracking-[0.3em] uppercase text-primary">Financial Strategy</span>
         <div className="h-px bg-primary/30 flex-1" />
         <Badge variant="outline" className="border-primary/30 text-muted-foreground font-normal tracking-wider">MARKETING SCOPE ONLY</Badge>
       </div>
@@ -26,27 +26,31 @@ const MarketingBudget = () => (
         subtitle="Year 1 — United Arab Emirates Only"
       />
 
-      {/* 9.0 Context */}
+      {/* Context */}
       <AnimatedSection className="mb-16 pdf-section">
-        <div className="bg-background border border-border rounded-lg p-6 md:p-8 space-y-6">
+        <div className="glass-card border border-primary/20 rounded-lg p-6 md:p-8 space-y-6">
           <div className="space-y-4">
-            <h3 className="font-display text-xl font-semibold text-foreground">Market Numbers</h3>
+            <h3 className="font-display text-xl font-semibold text-foreground flex items-center gap-2">
+              <Calculator className="w-5 h-5 text-primary" />
+              Market Calibration Data
+            </h3>
             <p className="text-sm text-muted-foreground">
-              Here is the breakdown of all marketing costs for Year 1. These numbers are based on real data from the UAE market.
+              <strong className="text-primary">Strategic Baseline:</strong>
+              The following budget structure is derived from verified UAE market data for Year 1. It assumes a focus on authority acquisition and disciplined scale.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
               {[
-                "Niche market size: ~$400M",
-                "Luxury sales in Dubai: ≥80%",
-                "Specialty retail share: ~58.9%",
-                "Ad cost (CPC): AED 6–15 (standard), AED 20–40 (high intent)",
-                "Influencer rates: AED 500–50,000+",
-                "PR monthly fees: AED 10k–60k",
-                "Pop-up cost: ~AED 3k/day",
-                "Fashion Avenue media: ~AED 180k/month",
-                "Influencer boost: 15–20%",
-                "Sampling conversion: ≥35%"
+                "Addressable Niche Market: ~$400M",
+                "Luxury Segment Share: ≥80%",
+                "Specialty Retail Contribution: ~58.9%",
+                "Standard CPC: AED 6–15",
+                "High-Intent CPC: AED 20–40",
+                "Influencer Seeding Rates: AED 500–50,000+",
+                "PR Retainer Range: AED 10k–60k",
+                "Pop-Up Operational Cost: ~AED 3k/day",
+                "Paid Amplification Load: 15–20%",
+                "Target Sampling Conversion: ≥35%"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
@@ -57,7 +61,8 @@ const MarketingBudget = () => (
 
             <div className="bg-primary/5 border-l-2 border-primary p-4 rounded-r mt-4">
               <p className="text-xs text-foreground italic">
-                "We only use numbers we can verify. If we don't have the data yet, we'll tell you."
+                <strong className="block mb-1">Financial Discipline:</strong>
+                "We operate on verified data, not assumptions. Where data is pending, we declare it."
               </p>
             </div>
           </div>
@@ -66,16 +71,16 @@ const MarketingBudget = () => (
 
       <Separator className="my-12 bg-border/50" />
 
-      {/* 9.1 Header */}
+      {/* Header */}
       <AnimatedSection className="mb-8 pdf-section">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Fixed Costs</Badge>
-              <h3 className="font-display text-2xl md:text-3xl text-foreground">9.1 Costs We Must Pay</h3>
+              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Fixed Allocation</Badge>
+              <h3 className="font-display text-2xl md:text-3xl text-foreground">Foundational Costs</h3>
             </div>
             <p className="text-muted-foreground mt-1 max-w-2xl">
-              These are the costs you can't avoid. You need them to build trust and get ready to sell before you start spending big on ads.
+              Non-negotiable investments required to establish authority and trust before aggressive media spend.
             </p>
           </div>
         </div>
@@ -83,31 +88,31 @@ const MarketingBudget = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 pdf-section">
         
-        {/* 9.1.1 Creative Development Bank */}
+        {/* Creative Development Bank */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Camera className="w-4 h-4 text-primary" />
-                9.1.1 Photo & Video Budget
+                Visual Asset Bank
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4 mb-6">
                 <div>
-                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">What We Need</div>
+                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Required Deliverables</div>
                   <div className="grid grid-cols-2 gap-2">
                     {[
-                      "Professional product photos",
-                      "Photos of ingredients",
-                      "Ads for Instagram/TikTok",
-                      "Packages for influencers",
-                      "Magazine-style photos",
-                      "Ramadan special content",
-                      "Website images",
-                      "Follow-up ads",
-                      "Ads for free samples",
-                      "Videos showing the product"
+                      "High-fidelity product photography",
+                      "Ingredient narrative visuals",
+                      "Social-first video assets (Reels/TikTok)",
+                      "Influencer seeding kits",
+                      "Editorial-style campaign imagery",
+                      "Ramadan-specific content",
+                      "Website visual hierarchy",
+                      "Retargeting creative variations",
+                      "Sampling funnel assets",
+                      "Product performance videos"
                     ].map((item, i) => (
                       <div key={i} className="flex items-center gap-2 text-[10px] text-muted-foreground">
                         <ArrowRight className="w-3 h-3 text-primary" />
@@ -119,11 +124,11 @@ const MarketingBudget = () => (
 
                 <div className="bg-surface border border-border rounded p-3">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="text-xs font-medium text-foreground">Estimated Cost</span>
+                    <span className="text-xs font-medium text-foreground">Estimated Allocation</span>
                     <span className="text-sm font-bold text-primary">AED 90,000</span>
                   </div>
                   <p className="text-[10px] text-muted-foreground">
-                    Good visuals make people trust the brand and make ads cheaper to run.
+                    High-quality assets reduce CPA by increasing ad relevance and trust.
                   </p>
                 </div>
 
@@ -131,7 +136,7 @@ const MarketingBudget = () => (
                   <div className="flex items-start gap-2">
                     <AlertTriangle className="w-3 h-3 text-destructive shrink-0 mt-0.5" />
                     <p className="text-[10px] text-muted-foreground">
-                      If you don't spend enough here, your ads stop working faster and cost more.
+                      Underspending on creative leads to faster ad fatigue and higher acquisition costs.
                     </p>
                   </div>
                 </div>
@@ -140,24 +145,24 @@ const MarketingBudget = () => (
           </Card>
         </AnimatedSection>
 
-        {/* 9.1.2 Public Relations Retainer */}
+        {/* Public Relations Retainer */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Megaphone className="w-4 h-4 text-primary" />
-                9.1.2 Getting in Magazines & Press
+                Authority Engineering (PR)
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-6 mb-6">
                 <div>
-                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Monthly Options</div>
+                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Monthly Retainer Tiers</div>
                   <div className="space-y-2">
                     {[
-                      { label: "Basic", range: "AED 10k–15k" },
+                      { label: "Entry Level", range: "AED 10k–15k" },
                       { label: "Standard Luxury", range: "AED 15k–25k" },
-                      { label: "Premium", range: "AED 25k–60k" }
+                      { label: "Premium / Prestige", range: "AED 25k–60k" }
                     ].map((item, i) => (
                       <div key={i} className="flex justify-between items-center text-xs border-b border-border/50 pb-1.5 last:border-0">
                         <span className="text-muted-foreground">{item.label}</span>
@@ -168,10 +173,10 @@ const MarketingBudget = () => (
                 </div>
 
                 <div>
-                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Yearly Cost</div>
+                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Annual Projection</div>
                   <div className="space-y-2">
                     {[
-                      { label: "Basic", range: "AED 120k–180k" },
+                      { label: "Entry", range: "AED 120k–180k" },
                       { label: "Standard", range: "AED 180k–300k" },
                       { label: "Premium", range: "AED 300k–720k" }
                     ].map((item, i) => (
@@ -184,9 +189,9 @@ const MarketingBudget = () => (
                 </div>
 
                 <div className="bg-primary/5 border border-primary/10 rounded p-3 mt-auto">
-                  <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">Why it matters</div>
+                  <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">Strategic Value</div>
                   <p className="text-[10px] text-muted-foreground">
-                    PR builds authority. When magazines talk about you, it's easier to sell to people who click your ads.
+                    PR validates the price point. Editorial coverage serves as a critical trust signal for cold traffic.
                   </p>
                 </div>
               </div>
@@ -198,31 +203,31 @@ const MarketingBudget = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 pdf-section">
         
-        {/* 9.1.3 Website and Digital Infrastructure */}
+        {/* Website and Digital Infrastructure */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Globe className="w-4 h-4 text-primary" />
-                9.1.3 Website & Online Store
+                Digital Infrastructure
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4 mb-6">
                 <div>
-                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">What We Need</div>
+                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Core Requirements</div>
                   <ul className="space-y-1.5">
                     {[
-                      "Custom luxury website",
-                      "English & Arabic support",
-                      "Setup to track sales",
-                      "Ad tracking setup",
-                      "Secure payment setup",
-                      "Tabby/Tamara (Buy Now Pay Later)",
-                      "Cash on Delivery setup",
-                      "Sampling landing page",
-                      "Retargeting setup",
-                      "Customer database connection"
+                      "Bespoke luxury e-commerce build",
+                      "Bilingual (English/Arabic) localization",
+                      "Advanced analytics & pixel integration",
+                      "Conversion API (CAPI) setup",
+                      "Secure payment gateway (Stripe/Checkout.com)",
+                      "BNPL integration (Tabby/Tamara)",
+                      "COD logistics workflow",
+                      "Dedicated sampling landing pages",
+                      "Dynamic retargeting feed",
+                      "CRM database integration"
                     ].map((item, i) => (
                       <li key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
                         <Check className="w-3 h-3 text-primary" />
@@ -236,7 +241,7 @@ const MarketingBudget = () => (
                   <div className="flex items-start gap-2">
                     <Shield className="w-3 h-3 text-muted-foreground shrink-0 mt-0.5" />
                     <p className="text-[10px] text-muted-foreground italic">
-                      "We need more data to give you an exact price for this part."
+                      "Exact costing requires technical scoping. This is a capital expenditure, not an expense."
                     </p>
                   </div>
                 </div>
@@ -245,28 +250,28 @@ const MarketingBudget = () => (
           </Card>
         </AnimatedSection>
 
-        {/* 9.1.4 CRM Infrastructure Setup */}
+        {/* CRM Infrastructure Setup */}
         <AnimatedSection delay={0.4}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Users className="w-4 h-4 text-primary" />
-                9.1.4 Emails & Customer List
+                Retention Architecture (CRM)
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4 mb-6">
                 <div>
-                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">What We Need</div>
+                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">System Capabilities</div>
                   <ul className="space-y-1.5">
                     {[
-                      "Automatic emails",
-                      "Follow-up after sampling",
-                      "Product education emails",
-                      "Sales emails",
-                      "Ramadan emails",
-                      "Connecting email list to ads",
-                      "Sales reports"
+                      "Automated welcome flows",
+                      "Post-sampling conversion sequences",
+                      "Product education series",
+                      "High-value customer segmentation",
+                      "Ramadan & seasonal reactivation",
+                      "Ad audience synchronization",
+                      "Lifetime Value (LTV) reporting"
                     ].map((item, i) => (
                       <li key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
                         <Mail className="w-3 h-3 text-primary" />
@@ -280,14 +285,14 @@ const MarketingBudget = () => (
                   <div className="flex items-start gap-2">
                     <Database className="w-3 h-3 text-muted-foreground shrink-0 mt-0.5" />
                     <p className="text-[10px] text-muted-foreground italic">
-                      "Software costs aren't included yet. We need to check current pricing."
+                      "SaaS licensing fees are variable. Implementation is a fixed cost."
                     </p>
                   </div>
                 </div>
 
                 <div className="bg-primary/5 border border-primary/10 rounded p-3">
                   <p className="text-[10px] text-muted-foreground">
-                    Email marketing helps us sell more to existing customers, so we don't have to pay for ads every time.
+                    <strong>ROI Driver:</strong> Email marketing creates zero-cost revenue events, offsetting paid acquisition costs over time.
                   </p>
                 </div>
               </div>
@@ -299,16 +304,16 @@ const MarketingBudget = () => (
 
       <Separator className="my-12 bg-border/50" />
 
-      {/* 9.2 Header */}
+      {/* Header */}
       <AnimatedSection className="mb-8 pdf-section">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Variable Costs</Badge>
-              <h3 className="font-display text-2xl md:text-3xl text-foreground">9.2 Costs That Change</h3>
+              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">Variable Allocation</Badge>
+              <h3 className="font-display text-2xl md:text-3xl text-foreground">Growth & Scale Costs</h3>
             </div>
             <p className="text-muted-foreground mt-1 max-w-2xl">
-              These costs go up or down depending on how fast you want to grow.
+              These investments scale directly with revenue objectives. They are the engine of growth.
             </p>
           </div>
         </div>
@@ -316,24 +321,24 @@ const MarketingBudget = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 pdf-section">
         
-        {/* 9.2.1 Paid Digital Media */}
+        {/* Paid Digital Media */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Layout className="w-4 h-4 text-primary" />
-                9.2.1 Online Ads
+                Performance Media
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4 mb-6">
                 <div>
-                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Ad Cost Estimates</div>
+                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Unit Economics</div>
                   <div className="space-y-1.5">
                     {[
-                      { label: "Normal Click", value: "AED 6–15" },
-                      { label: "Click from Buyer", value: "AED 20–40" },
-                      { label: "Views from Luxury Buyers", value: "AED 5–15" }
+                      { label: "Standard CPC", value: "AED 6–15" },
+                      { label: "High-Intent CPC", value: "AED 20–40" },
+                      { label: "Retargeting CPM", value: "AED 5–15" }
                     ].map((item, i) => (
                       <div key={i} className="flex justify-between items-center text-xs border-b border-border/50 pb-1.5 last:border-0">
                         <span className="text-muted-foreground">{item.label}</span>
@@ -344,16 +349,16 @@ const MarketingBudget = () => (
                 </div>
 
                 <div>
-                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Where We Spend</div>
+                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Channel Mix</div>
                   <ul className="space-y-1.5">
                     {[
-                      "Ads to get known",
-                      "Ads to get visitors",
-                      "Ads for samples",
-                      "Google Search Ads",
-                      "Ads to bring people back",
-                      "Ramadan Special Ads",
-                      "Boosting Influencer Posts"
+                      "Brand Awareness (Top Funnel)",
+                      "Traffic Acquisition (Mid Funnel)",
+                      "Sampling Conversion (Mid Funnel)",
+                      "Search Intent Capture (Bottom Funnel)",
+                      "Dynamic Retargeting (Bottom Funnel)",
+                      "Seasonal Surge (Ramadan)",
+                      "Post-Influencer Amplification"
                     ].map((item, i) => (
                       <li key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
                         <Check className="w-3 h-3 text-primary" />
@@ -365,11 +370,11 @@ const MarketingBudget = () => (
 
                 <div className="bg-surface border border-border rounded p-3 mt-auto">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="text-xs font-medium text-foreground">Starting Budget</span>
+                    <span className="text-xs font-medium text-foreground">Initial Budget Cap</span>
                     <span className="text-sm font-bold text-primary">AED 450,000</span>
                   </div>
                   <p className="text-[10px] text-muted-foreground">
-                    This is enough to start for Year 1. We use it to test what works.
+                    Sufficient for Year 1 market entry and testing. Scale is contingent on performance.
                   </p>
                 </div>
               </div>
@@ -377,48 +382,33 @@ const MarketingBudget = () => (
           </Card>
         </AnimatedSection>
 
-        {/* 9.2.2 Influencer Campaigns */}
+        {/* Influencer Campaigns */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Users className="w-4 h-4 text-primary" />
-                9.2.2 Working with Influencers
+                Influencer Seeding
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4 mb-6">
                 <div>
-                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">UAE Market Rates</div>
-                  <div className="space-y-1.5">
-                    {[
-                      { label: "Small (Nano)", value: "AED 500–2k" },
-                      { label: "Niche (Micro)", value: "AED 2k–5k" },
-                      { label: "Mid-Size", value: "AED 5k–20k" },
-                      { label: "Famous (Macro)", value: "AED 15k–50k+" }
-                    ].map((item, i) => (
-                      <div key={i} className="flex justify-between items-center text-xs border-b border-border/50 pb-1.5 last:border-0">
-                        <span className="text-muted-foreground">{item.label}</span>
-                        <span className="font-medium text-foreground">{item.value}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                   <div className="flex items-center justify-between text-xs bg-surface border border-border rounded p-2">
-                    <span className="text-muted-foreground">Budget to Boost Posts</span>
-                    <span className="font-bold text-foreground">15–20%</span>
-                  </div>
-                   <div className="flex items-center justify-between text-xs bg-surface border border-border rounded p-2">
-                    <span className="text-muted-foreground">Return on Spend</span>
-                    <span className="font-bold text-foreground">6.5x</span>
+                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Strategic Goal</div>
+                  <p className="text-xs text-muted-foreground mb-3">
+                    Leverage "borrowed trust" to validate the brand before scaling cold traffic ads.
+                  </p>
+                  <div className="bg-surface border border-border rounded p-3">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="text-xs font-medium text-foreground">Allocation</span>
+                      <span className="text-sm font-bold text-primary">~20% of Media</span>
+                    </div>
                   </div>
                 </div>
 
                 <div className="bg-primary/5 border border-primary/10 rounded p-3 mt-auto">
                   <p className="text-[10px] text-muted-foreground">
-                    Costs go up fast if we use famous influencers. We need to know your product price and how many people buy to plan this perfectly.
+                    <strong>Note:</strong> We prioritize engagement rate over follower count.
                   </p>
                 </div>
               </div>
@@ -426,56 +416,46 @@ const MarketingBudget = () => (
           </Card>
         </AnimatedSection>
 
-        {/* 9.2.3 Sampling Programs */}
+        {/* Sampling Program */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-background border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
-                <CreditCard className="w-4 h-4 text-primary" />
-                9.2.3 Sending Free Samples
+                <Gift className="w-4 h-4 text-primary" />
+                Discovery Program (Sampling)
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 flex-1 flex flex-col">
               <div className="space-y-4 mb-6">
                 <div>
-                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">What to Expect</div>
-                  <div className="space-y-1.5">
+                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">The "Discovery Set"</div>
+                  <p className="text-xs text-muted-foreground mb-3">
+                    A paid or subsidized sample set that lowers the barrier to entry for new customers.
+                  </p>
+                  <ul className="space-y-1.5">
                     {[
-                      { label: "People who buy", value: "≥35%" },
-                      { label: "Buy right away", value: "13%" }
-                    ].map((item, i) => (
-                      <div key={i} className="flex justify-between items-center text-xs border-b border-border/50 pb-1.5 last:border-0">
-                        <span className="text-muted-foreground">{item.label}</span>
-                        <span className="font-medium text-foreground">{item.value}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <div className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">What Costs Money</div>
-                  <div className="grid grid-cols-1 gap-1.5">
-                    {[
-                      "Making the sample",
-                      "Box & Delivery",
-                      "Sending to influencers",
-                      "More during Ramadan"
+                      "Low entry price point",
+                      "Full brand experience unboxing",
+                      "Rebate code for full bottle",
+                      "Email capture mechanism",
+                      "High-intent audience signal"
                     ].map((item, i) => (
                       <li key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <div className="w-1 h-1 rounded-full bg-primary" />
+                        <Check className="w-3 h-3 text-primary" />
                         {item}
                       </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
 
-                <div className="bg-destructive/5 border border-destructive/10 rounded p-3 mt-auto">
-                  <div className="flex items-start gap-2">
-                    <AlertTriangle className="w-3 h-3 text-destructive shrink-0 mt-0.5" />
-                    <p className="text-[10px] text-muted-foreground">
-                      If we don't spend enough on sampling, our ads won't work as well.
-                    </p>
+                <div className="bg-surface border border-border rounded p-3 mt-auto">
+                  <div className="flex justify-between items-center mb-1">
+                    <span className="text-xs font-medium text-foreground">Target CPA</span>
+                    <span className="text-sm font-bold text-primary">Break-even</span>
                   </div>
+                  <p className="text-[10px] text-muted-foreground">
+                    The goal is to acquire a customer at net-zero cost, then profit on the full bottle upgrade.
+                  </p>
                 </div>
               </div>
             </CardContent>
