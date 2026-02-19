@@ -91,6 +91,7 @@ const Year2Transition = () => {
           </div>
         </AnimatedSection>
       </div>
+      </AnimatedSection>
 
       <AnimatedSection delay={0.3}>
         <div className="p-8 glass-card rounded-xl border border-primary/20 text-center max-w-3xl mx-auto">

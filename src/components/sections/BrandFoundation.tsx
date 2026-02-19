@@ -19,6 +19,7 @@ import {
   PenTool,
   CheckCircle2,
   AlertCircle,
+  Users,
 } from "lucide-react";
 
 const BrandFoundation = () => (
