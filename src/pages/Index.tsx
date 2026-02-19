@@ -27,6 +27,7 @@ const Index = () => {
       <DigitalInfrastructure />
       <AuthorityTrust />
       <DigitalPerformance />
+      <AdvancedAcquisition />
       <ExperientialActivation />
       <ExecutionRoadmap />
       <MarketingBudget />
