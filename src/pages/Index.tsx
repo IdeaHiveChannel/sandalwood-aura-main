@@ -5,6 +5,7 @@ import BrandFoundation from "@/components/sections/BrandFoundation";
 import DigitalInfrastructure from "@/components/sections/DigitalInfrastructure";
 import AuthorityTrust from "@/components/sections/AuthorityTrust";
 import DigitalPerformance from "@/components/sections/DigitalPerformance";
+import AdvancedAcquisition from "@/components/sections/AdvancedAcquisition";
 import ExperientialActivation from "@/components/sections/ExperientialActivation";
 import AdvancedStrategies from "@/components/sections/AdvancedStrategies";
 import ExecutionRoadmap from "@/components/sections/ExecutionRoadmap";
