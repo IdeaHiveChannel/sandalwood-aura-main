@@ -1,29 +1,69 @@
 # Sandalwood Aura
 
-## Project info
+**Sandalwood Aura** is an exclusive executive overview and marketing strategy dashboard. This project serves as a confidential blueprint for stakeholder review, presenting a comprehensive market analysis, brand foundation, and execution roadmap.
 
-**URL**: http://localhost:8083/
+## Project Overview
+
+This single-page application (SPA) provides a high-level strategic view of the Sandalwood Aura brand, including:
+
+-   **Executive Summary:** High-level vision and objectives.
+-   **Market Context:** Analysis of the competitive landscape.
+-   **Brand Foundation:** Core values, mission, and identity.
+-   **Digital Infrastructure:** Technology stack and digital ecosystem.
+-   **Execution Roadmap:** Timeline and key milestones.
+-   **Financials:** Marketing budget and performance frameworks.
+
+## Features
+
+-   **Interactive Dashboard:** Built with React and Tailwind CSS for a responsive, modern UI.
+-   **PDF Export:** Generate a professional-grade PDF report of the entire strategy directly from the dashboard.
+-   **Data Visualization:** Clear charts and metrics to illustrate key performance indicators.
+
+## Tech Stack
+
+-   **Frontend:** React, TypeScript
+-   **Styling:** Tailwind CSS, Shadcn UI
+-   **Build Tool:** Vite
+-   **PDF Generation:** html2canvas, jsPDF
 
 ## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+-   Node.js (v18 or higher)
+-   npm (v9 or higher)
 
-```sh
-# Step 1: Install the necessary dependencies.
-npm i
+### Installation
 
-# Step 2: Start the development server with auto-reloading and an instant preview.
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/IdeaHiveChannel/sandalwood-aura-main.git
+    cd sandalwood-aura-main
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Development
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-## What technologies are used for this project?
+The application will be available at `http://localhost:8080` (or the port specified in your terminal).
 
-This project is built with:
+### Build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+To build the project for production:
+
+```bash
+npm run build
+```
+
+## License
+
+Confidential & Proprietary. All Rights Reserved © Sandalwood Aura.
