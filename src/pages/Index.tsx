@@ -6,6 +6,7 @@ import DigitalInfrastructure from "@/components/sections/DigitalInfrastructure";
 import AuthorityTrust from "@/components/sections/AuthorityTrust";
 import DigitalPerformance from "@/components/sections/DigitalPerformance";
 import ExperientialActivation from "@/components/sections/ExperientialActivation";
+import AdvancedStrategies from "@/components/sections/AdvancedStrategies";
 import ExecutionRoadmap from "@/components/sections/ExecutionRoadmap";
 import MarketingBudget from "@/components/sections/MarketingBudget";
 import PerformanceFramework from "@/components/sections/PerformanceFramework";
