@@ -145,3 +145,80 @@
     @apply container mx-auto px-6 md:px-12 max-w-7xl relative z-10;
   }
 }
+
+@media print {
+  /* Reset animations and ensure visibility */
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  section, div, span, p, h1, h2, h3, h4, h5, h6 {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    visibility: visible !important;
+  }
+
+  /* High contrast for print */
+  body {
+    background-color: white !important;
+    background-image: none !important;
+    color: black !important;
+  }
+
+  /* Fix card styling for print */
+  .glass-card {
+    background-color: white !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    color: black !important;
+    backdrop-filter: none !important;
+  }
+
+  /* Typography adjustments */
+  .text-muted-foreground {
+    color: #444 !important;
+  }
+
+  .text-primary, .text-gold {
+    color: #000 !important;
+    font-weight: bold !important;
+    -webkit-text-fill-color: black !important;
+  }
+
+  .bg-primary\/10 {
+    background-color: #f0f0f0 !important;
+    border: 1px solid #ddd !important;
+  }
+
+  /* Layout adjustments */
+  .luxury-container {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Hide interactive/decorative elements */
+  .fixed, .absolute {
+    position: static !important;
+  }
+  
+  /* Keep specific absolute elements if needed, but generally reset */
+  
+  /* Ensure grids work */
+  .grid {
+    display: grid !important;
+    gap: 1rem !important;
+  }
+
+  /* Page break optimizations */
+  .glass-card {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  h1, h2, h3, h4 {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+}
