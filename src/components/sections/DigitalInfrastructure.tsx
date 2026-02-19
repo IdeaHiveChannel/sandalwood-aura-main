@@ -22,9 +22,9 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 const DigitalInfrastructure = () => (
-  <section className="py-24 md:py-32 px-4 md:px-8 max-w-7xl mx-auto">
+  <section className="py-24 md:py-32 luxury-container">
     <div className="mb-12">
-      <Badge variant="outline" className="mb-4 border-primary/50 text-primary tracking-widest uppercase">Section 4</Badge>
+      <Badge variant="luxury" className="mb-4">Section 4</Badge>
       <SectionTitle
         title="Digital Infrastructure (Step 2)"
         subtitle="This step builds the digital environment required before scaling paid acquisition."
@@ -32,7 +32,7 @@ const DigitalInfrastructure = () => (
     </div>
 
     <AnimatedSection className="mb-12">
-      <Card className="bg-surface/50 border-primary/10 backdrop-blur-sm">
+      <Card className="glass-card">
         <CardContent className="pt-6">
           <p className="font-body text-muted-foreground leading-relaxed">
             In a market where the niche segment is valued at approximately USD 400 million, online sales are growing at 5.88 percent annually, and cost per click ranges from AED 6–15 (medium competition) and AED 20–40 (high intent) — digital infrastructure must be prepared to convert high-cost traffic efficiently and protect brand authority.
@@ -49,7 +49,7 @@ const DigitalInfrastructure = () => (
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
         <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Card className="bg-surface border-border">
+          <Card className="glass-card">
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
                 <Layout className="w-5 h-5 text-primary" />
@@ -75,7 +75,7 @@ const DigitalInfrastructure = () => (
             </CardContent>
           </Card>
 
-          <Card className="bg-surface border-border">
+          <Card className="glass-card">
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
                 <Zap className="w-5 h-5 text-primary" />
@@ -102,7 +102,7 @@ const DigitalInfrastructure = () => (
         </div>
 
         <div className="lg:col-span-1">
-          <Card className="h-full bg-surface border-border flex flex-col">
+          <Card className="h-full glass-card flex flex-col">
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
                 <Globe className="w-5 h-5 text-primary" />
@@ -131,7 +131,7 @@ const DigitalInfrastructure = () => (
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground flex items-center gap-2">
               <ShoppingCart className="w-5 h-5 text-primary" />
@@ -155,7 +155,7 @@ const DigitalInfrastructure = () => (
           </CardContent>
         </Card>
 
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground flex items-center gap-2">
               <Search className="w-5 h-5 text-primary" />
@@ -184,7 +184,7 @@ const DigitalInfrastructure = () => (
       </div>
 
       <div className="mt-6">
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader className="pb-2">
             <CardTitle className="font-display text-base text-muted-foreground uppercase tracking-wider">Funnel Hierarchy</CardTitle>
           </CardHeader>
@@ -215,7 +215,7 @@ const DigitalInfrastructure = () => (
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <CreditCard className="w-5 h-5 text-primary" />
@@ -227,7 +227,7 @@ const DigitalInfrastructure = () => (
           </CardContent>
         </Card>
 
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <RefreshCcw className="w-5 h-5 text-primary" />
@@ -240,7 +240,7 @@ const DigitalInfrastructure = () => (
           </CardContent>
         </Card>
 
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <MousePointerClick className="w-5 h-5 text-primary" />
@@ -261,7 +261,7 @@ const DigitalInfrastructure = () => (
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <BarChart3 className="w-5 h-5 text-primary" />
@@ -286,7 +286,7 @@ const DigitalInfrastructure = () => (
           </CardContent>
         </Card>
 
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <Database className="w-5 h-5 text-primary" />
@@ -317,7 +317,7 @@ const DigitalInfrastructure = () => (
         <span className="text-primary">4.5</span> CRM Setup
       </h3>
       
-      <Card className="bg-surface border-border">
+      <Card className="glass-card">
         <CardContent className="pt-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="space-y-2">

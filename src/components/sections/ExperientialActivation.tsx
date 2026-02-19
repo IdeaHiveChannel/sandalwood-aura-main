@@ -97,7 +97,7 @@ const ExperientialActivation = () => (
         
         {/* 7.1.1 Strategic Role */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Target className="w-4 h-4 text-primary" />
@@ -133,7 +133,7 @@ const ExperientialActivation = () => (
 
         {/* 7.1.2 Cost Structure */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-surface border-border h-full flex flex-col glow-gold">
+          <Card className="glass-card h-full flex flex-col glow-gold">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <CreditCard className="w-4 h-4 text-primary" />
@@ -176,7 +176,7 @@ const ExperientialActivation = () => (
 
         {/* 7.1.3 Location Selection */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
@@ -216,7 +216,7 @@ const ExperientialActivation = () => (
 
         {/* 7.1.4 Design Standard */}
         <AnimatedSection delay={0.4}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Palette className="w-4 h-4 text-primary" />
@@ -267,7 +267,7 @@ const ExperientialActivation = () => (
 
         {/* 7.1.5 Staffing Profile */}
         <AnimatedSection delay={0.5}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <User className="w-4 h-4 text-primary" />
@@ -306,7 +306,7 @@ const ExperientialActivation = () => (
 
         {/* 7.1.6 Digital Integration */}
         <AnimatedSection delay={0.6}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Store className="w-4 h-4 text-primary" />
@@ -366,7 +366,7 @@ const ExperientialActivation = () => (
         
         {/* 7.2.1 Cultural Drivers */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Moon className="w-4 h-4 text-primary" />
@@ -402,7 +402,7 @@ const ExperientialActivation = () => (
 
         {/* 7.2.2 Messaging Adaptation */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <MessageSquare className="w-4 h-4 text-primary" />
@@ -448,7 +448,7 @@ const ExperientialActivation = () => (
 
         {/* 7.2.3 Digital Surge Planning */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-surface border-border h-full flex flex-col glow-gold">
+          <Card className="glass-card h-full flex flex-col glow-gold">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <TrendingUp className="w-4 h-4 text-primary" />
@@ -494,7 +494,7 @@ const ExperientialActivation = () => (
 
         {/* 7.2.4 Influencer Role */}
         <AnimatedSection delay={0.4}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Camera className="w-4 h-4 text-primary" />
@@ -546,7 +546,7 @@ const ExperientialActivation = () => (
 
         {/* 7.2.5 Experiential Extension */}
         <AnimatedSection delay={0.5} className="md:col-span-2 lg:col-span-1">
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Calendar className="w-4 h-4 text-primary" />
@@ -612,7 +612,7 @@ const ExperientialActivation = () => (
         
         {/* 7.3.1 Benchmark */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-surface border-border h-full flex flex-col glow-gold">
+          <Card className="glass-card h-full flex flex-col glow-gold">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <BarChart className="w-4 h-4 text-primary" />
@@ -662,7 +662,7 @@ const ExperientialActivation = () => (
 
         {/* 7.3.2 Strategic Role */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Target className="w-4 h-4 text-primary" />
@@ -699,7 +699,7 @@ const ExperientialActivation = () => (
 
         {/* 7.3.3 Preconditions */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Check className="w-4 h-4 text-primary" />
@@ -738,7 +738,7 @@ const ExperientialActivation = () => (
 
         {/* 7.3.4 Integration & Risk */}
         <AnimatedSection delay={0.4}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Link className="w-4 h-4 text-primary" />
@@ -808,7 +808,7 @@ const ExperientialActivation = () => (
         
         {/* 7.4.1 Core Quantitative Metrics */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Activity className="w-4 h-4 text-primary" />
@@ -848,7 +848,7 @@ const ExperientialActivation = () => (
 
         {/* 7.4.2 Sampling Conversion Tracking */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Target className="w-4 h-4 text-primary" />
@@ -900,7 +900,7 @@ const ExperientialActivation = () => (
 
         {/* 7.4.3 Digital Uplift Measurement */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <TrendingUp className="w-4 h-4 text-primary" />
@@ -940,7 +940,7 @@ const ExperientialActivation = () => (
 
         {/* 7.4.4 Authority Perception Indicators */}
         <AnimatedSection delay={0.4}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Eye className="w-4 h-4 text-primary" />
@@ -976,7 +976,7 @@ const ExperientialActivation = () => (
 
         {/* 7.4.5 Decision Evaluation Framework */}
         <AnimatedSection delay={0.5} className="md:col-span-2 lg:col-span-2">
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Scale className="w-4 h-4 text-primary" />

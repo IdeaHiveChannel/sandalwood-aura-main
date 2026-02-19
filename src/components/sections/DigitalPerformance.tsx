@@ -20,9 +20,9 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 const DigitalPerformance = () => (
-  <section className="py-24 md:py-32 px-4 md:px-8 max-w-7xl mx-auto">
+  <section className="py-24 md:py-32 luxury-container">
     <div className="mb-12">
-      <Badge variant="outline" className="mb-4 border-primary/50 text-primary tracking-widest uppercase">Section 6</Badge>
+      <Badge variant="luxury" className="mb-4">Section 6</Badge>
       <SectionTitle
         title="Digital Performance Strategy (Step 4)"
         subtitle="This section defines how paid acquisition is executed after brand foundation, website, PR authority, influencer seeding, and sampling infrastructure are operational."
@@ -30,7 +30,7 @@ const DigitalPerformance = () => (
     </div>
 
     <AnimatedSection className="mb-12">
-      <Card className="bg-surface/50 border-primary/10 backdrop-blur-sm">
+      <Card className="glass-card">
         <CardContent className="pt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
@@ -46,7 +46,7 @@ const DigitalPerformance = () => (
                 { label: "Med CPC", val: "AED 6–15" },
                 { label: "High Intent", val: "AED 20–40" },
               ].map((stat, i) => (
-                <div key={i} className="bg-surface border border-border/50 rounded-lg p-3 text-center">
+                <div key={i} className="glass-card rounded-lg p-3 text-center hover:bg-white/5 transition-colors">
                   <div className="text-primary font-bold text-lg">{stat.val}</div>
                   <div className="text-[10px] uppercase tracking-wider text-muted-foreground">{stat.label}</div>
                 </div>
@@ -90,7 +90,7 @@ const DigitalPerformance = () => (
             expected: "Identifiable CAC trend, validated sampling ratio."
           }
         ].map((item, i) => (
-          <Card key={i} className="bg-surface border-border flex flex-col h-full">
+          <Card key={i} className="glass-card flex flex-col h-full">
             <CardHeader className="pb-4">
               <div className="flex justify-between items-start mb-2">
                 <Badge variant="secondary" className="text-xs">{item.days}</Badge>
@@ -130,7 +130,7 @@ const DigitalPerformance = () => (
         <span className="text-primary">6.2</span> Paid Media Structure
       </h3>
       
-      <Card className="bg-surface border-border mb-8">
+      <Card className="glass-card mb-8">
         <CardContent className="pt-6">
           <p className="text-sm text-muted-foreground mb-6">
             Digital acquisition must operate across three structured layers. Operating without layered structure increases auction inefficiency in the AED 6–40 CPC environment.
@@ -217,14 +217,6 @@ const DigitalPerformance = () => (
       </Card>
     </AnimatedSection>
     
-    <AnimatedSection>
-      <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 text-center">
-        <p className="font-display text-lg text-primary mb-2">Detailed Strategic Dossier Continuation</p>
-        <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-          Sections 7–11 (Experiential Activation, 12-Month Roadmap, Budget Structure, Performance Measurement, and Owner Decision Framework) are available in the full documentation.
-        </p>
-      </div>
-    </AnimatedSection>
   </section>
 );
 

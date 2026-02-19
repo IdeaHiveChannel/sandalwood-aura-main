@@ -24,9 +24,9 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 const MarketContext = () => (
-  <section className="py-24 md:py-32 px-4 md:px-8 max-w-7xl mx-auto">
+  <section className="py-24 md:py-32 luxury-container">
     <div className="mb-12">
-      <Badge variant="outline" className="mb-4 border-primary/50 text-primary tracking-widest uppercase">Section 2</Badge>
+      <Badge variant="luxury" className="mb-4">Section 2</Badge>
       <SectionTitle
         title="Market Facts"
         subtitle="This section is based on real UAE market data. No guesses, just facts."
@@ -38,7 +38,7 @@ const MarketContext = () => (
       <h3 className="font-display text-2xl md:text-3xl font-semibold mb-8 text-foreground flex items-center gap-3">
         <span className="text-primary">2.1</span> Market Size
       </h3>
-      <Card className="bg-surface border-border">
+      <Card className="glass-card">
         <CardContent className="pt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
@@ -83,7 +83,7 @@ const MarketContext = () => (
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardContent className="pt-6 flex flex-col items-center justify-center text-center h-full">
             <div className="font-display text-4xl font-bold text-muted-foreground mb-2">2.7%</div>
             <div className="font-body text-xs uppercase tracking-wider text-muted-foreground">Regular Perfume Growth</div>
@@ -91,7 +91,7 @@ const MarketContext = () => (
           </CardContent>
         </Card>
         
-        <Card className="bg-surface border-primary shadow-lg shadow-primary/5">
+        <Card className="glass-card border-gold/50 bg-gold/5 shadow-gold/10">
           <CardContent className="pt-6 flex flex-col items-center justify-center text-center h-full">
             <div className="font-display text-4xl font-bold text-primary mb-2">8.0%</div>
             <div className="font-body text-xs uppercase tracking-wider text-primary">Luxury Perfume Growth</div>
@@ -100,7 +100,7 @@ const MarketContext = () => (
         </Card>
       </div>
 
-      <Card className="bg-surface border-border">
+      <Card className="glass-card">
         <CardContent className="pt-6">
           <p className="text-sm text-muted-foreground leading-relaxed">
             If we want to build a brand that lasts, we need to be in the luxury market. That's where the growth is. But that means we have to look and act like a luxury brand.
@@ -127,7 +127,7 @@ const MarketContext = () => (
         </div>
         
         <div className="lg:col-span-2">
-          <Card className="bg-surface border-border h-full">
+          <Card className="glass-card h-full">
             <CardHeader>
               <CardTitle className="font-display text-lg">What This Means</CardTitle>
             </CardHeader>
@@ -174,7 +174,7 @@ const MarketContext = () => (
         <h3 className="font-display text-xl font-semibold mb-6 text-foreground flex items-center gap-3">
           <span className="text-primary">2.4</span> Stores vs Online
         </h3>
-        <Card className="bg-surface border-border h-full">
+        <Card className="glass-card h-full">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Store Sales</CardTitle>
             <Store className="h-4 w-4 text-muted-foreground" />
@@ -197,7 +197,7 @@ const MarketContext = () => (
         <h3 className="font-display text-xl font-semibold mb-6 text-foreground flex items-center gap-3">
           <span className="text-primary">2.5</span> Ad Costs
         </h3>
-        <Card className="bg-surface border-border h-full">
+        <Card className="glass-card h-full">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Click Costs</CardTitle>
             <MousePointerClick className="h-4 w-4 text-muted-foreground" />
@@ -230,7 +230,7 @@ const MarketContext = () => (
         <span className="text-primary">2.6</span> Influencer Results
       </h3>
       
-      <Card className="bg-surface border-border overflow-hidden">
+      <Card className="glass-card overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -287,7 +287,7 @@ const MarketContext = () => (
           </CardContent>
         </Card>
 
-        <Card className="bg-surface border-border flex flex-col justify-center">
+        <Card className="glass-card flex flex-col justify-center">
           <CardContent className="pt-6">
             <p className="text-xs text-muted-foreground text-center italic">
               "Sampling is not optional. It is a structural accelerator. If trial experience fails, conversion falls below 35%."
@@ -303,7 +303,7 @@ const MarketContext = () => (
         <span className="text-primary">2.8</span> Getting Seen
       </h3>
       
-      <Card className="bg-surface border-border">
+      <Card className="glass-card">
         <CardContent className="pt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
@@ -479,7 +479,7 @@ const MarketContext = () => (
                 icon: Globe
             }
         ].map((cluster, i) => (
-            <Card key={i} className="bg-surface border-border h-full">
+            <Card key={i} className="glass-card h-full">
                 <CardHeader className="pb-3 pt-4 px-4">
                     <CardTitle className="text-sm font-semibold flex items-center gap-2">
                         <cluster.icon className="w-4 h-4 text-primary" />

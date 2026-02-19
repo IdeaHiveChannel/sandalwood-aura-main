@@ -212,7 +212,7 @@ const ExecutiveOverview = () => {
           { value: "8%", label: "Annual niche growth rate", icon: TrendingUp },
         ].map((stat, i) => (
           <AnimatedSection key={stat.label} delay={i * 0.1}>
-            <Card className="bg-card border-border h-full flex flex-col items-center justify-center text-center p-6 hover:border-primary/30 transition-colors">
+            <Card className="glass-card h-full flex flex-col items-center justify-center text-center p-6 hover:border-primary/30 transition-colors">
               <div className="p-3 bg-primary/5 rounded-full mb-4">
                 <stat.icon className="w-6 h-6 text-primary" />
               </div>
@@ -225,7 +225,7 @@ const ExecutiveOverview = () => {
     </AnimatedSection>
 
     <AnimatedSection className="mb-16 pdf-section">
-      <Card className="bg-surface border-border">
+      <Card className="glass-card">
         <CardContent className="pt-6 space-y-6">
           <p className="font-body text-sm text-muted-foreground leading-relaxed">
             The niche segment is expanding at an estimated 8 percent annual growth rate, significantly higher than the mass fragrance segment, which is growing at approximately 2.7 percent annually. This growth differential confirms sustained premiumization within the fragrance category.
@@ -282,7 +282,7 @@ const ExecutiveOverview = () => {
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pdf-grid-3">
         <div className="lg:col-span-1">
-          <Card className="h-full bg-surface border-border">
+          <Card className="h-full glass-card">
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
                 <ShieldAlert className="w-5 h-5 text-primary" />
@@ -309,7 +309,7 @@ const ExecutiveOverview = () => {
         </div>
 
         <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 pdf-col-span-2 pdf-grid-2">
-          <Card className="bg-surface border-border">
+          <Card className="glass-card">
             <CardHeader className="pb-2">
               <CardTitle className="font-display text-sm text-muted-foreground uppercase tracking-wider">Digital Benchmarks (2026)</CardTitle>
             </CardHeader>
@@ -344,7 +344,7 @@ const ExecutiveOverview = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-surface border-border">
+          <Card className="glass-card">
             <CardHeader className="pb-2">
               <CardTitle className="font-display text-sm text-muted-foreground uppercase tracking-wider">Influencer Rates (UAE)</CardTitle>
             </CardHeader>
@@ -413,7 +413,7 @@ const ExecutiveOverview = () => {
           },
         ].map((segment, i) => (
           <AnimatedSection key={segment.name} delay={i * 0.1}>
-            <Card className="h-full bg-surface border-border flex flex-col hover:border-primary/30 transition-colors">
+            <Card className="h-full glass-card flex flex-col hover:border-primary/30 transition-colors">
               <CardHeader className="pb-4 border-b border-border/50">
                 <div className="flex justify-between items-start mb-2">
                   <div className="p-2 bg-primary/10 rounded-lg">
@@ -454,7 +454,7 @@ const ExecutiveOverview = () => {
     </AnimatedSection>
     
     <AnimatedSection className="mb-16 pdf-section">
-      <Card className="bg-surface border-border overflow-hidden">
+      <Card className="glass-card overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 pdf-grid-2">
           <div className="p-8 bg-surface">
             <h4 className="font-display text-xl font-semibold text-foreground mb-4">Why Budget Comes First</h4>
@@ -504,7 +504,7 @@ const ExecutiveOverview = () => {
     
     <AnimatedSection className="mb-16 pdf-section">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pdf-grid-2">
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground">Primary Goals</CardTitle>
           </CardHeader>
@@ -529,7 +529,7 @@ const ExecutiveOverview = () => {
           </CardContent>
         </Card>
         
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground">Success Definition</CardTitle>
           </CardHeader>
@@ -711,7 +711,7 @@ const ExecutiveOverview = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8 pdf-grid-3">
         {/* A. Brand Foundation */}
-        <Card className="bg-surface border-border h-full flex flex-col">
+        <Card className="glass-card h-full flex flex-col">
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground flex items-center gap-2">
               <div className="p-2 bg-primary/10 rounded-lg">
@@ -764,7 +764,7 @@ const ExecutiveOverview = () => {
         </Card>
 
         {/* B. Digital Infrastructure */}
-        <Card className="bg-surface border-border h-full flex flex-col">
+        <Card className="glass-card h-full flex flex-col">
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground flex items-center gap-2">
               <div className="p-2 bg-primary/10 rounded-lg">
@@ -818,7 +818,7 @@ const ExecutiveOverview = () => {
         </Card>
 
         {/* C. Authority Layer */}
-        <Card className="bg-surface border-border h-full flex flex-col">
+        <Card className="glass-card h-full flex flex-col">
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground flex items-center gap-2">
               <div className="p-2 bg-primary/10 rounded-lg">
@@ -919,7 +919,7 @@ const ExecutiveOverview = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pdf-grid-3">
         
         {/* 1. Brand & Creative Development */}
-        <Card className="bg-surface border-border h-full flex flex-col">
+        <Card className="glass-card h-full flex flex-col">
           <CardHeader>
             <div className="flex items-center gap-2 mb-2">
               <div className="p-2 bg-primary/10 rounded-lg">
@@ -984,7 +984,7 @@ const ExecutiveOverview = () => {
         </Card>
 
         {/* 2. Digital Infrastructure */}
-        <Card className="bg-surface border-border h-full flex flex-col">
+        <Card className="glass-card h-full flex flex-col">
           <CardHeader>
             <div className="flex items-center gap-2 mb-2">
               <div className="p-2 bg-primary/10 rounded-lg">
@@ -1049,7 +1049,7 @@ const ExecutiveOverview = () => {
         </Card>
 
         {/* 3. Paid Advertising */}
-        <Card className="bg-surface border-border h-full flex flex-col">
+        <Card className="glass-card h-full flex flex-col">
           <CardHeader>
             <div className="flex items-center gap-2 mb-2">
               <div className="p-2 bg-primary/10 rounded-lg">
@@ -1108,7 +1108,7 @@ const ExecutiveOverview = () => {
     <AnimatedSection className="mb-8 pdf-section">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pdf-grid-3">
         {/* 4. Influencer Marketing */}
-        <Card className="bg-surface border-border h-full flex flex-col">
+        <Card className="glass-card h-full flex flex-col">
           <CardHeader>
             <div className="flex items-center gap-2 mb-2">
               <div className="p-2 bg-primary/10 rounded-lg">
@@ -1163,7 +1163,7 @@ const ExecutiveOverview = () => {
         </Card>
 
         {/* 5. Public Relations (PR) */}
-        <Card className="bg-surface border-border h-full flex flex-col">
+        <Card className="glass-card h-full flex flex-col">
           <CardHeader>
             <div className="flex items-center gap-2 mb-2">
               <div className="p-2 bg-primary/10 rounded-lg">
@@ -1217,7 +1217,7 @@ const ExecutiveOverview = () => {
         </Card>
 
         {/* 6. Sampling System */}
-        <Card className="bg-surface border-border h-full flex flex-col">
+        <Card className="glass-card h-full flex flex-col">
           <CardHeader>
             <div className="flex items-center gap-2 mb-2">
               <div className="p-2 bg-primary/10 rounded-lg">
@@ -1279,7 +1279,7 @@ const ExecutiveOverview = () => {
 
     {/* 7. Optional Prestige Activation */}
     <AnimatedSection className="mb-8 pdf-section">
-      <Card className="bg-surface border-border h-full flex flex-col border-dashed">
+      <Card className="glass-card h-full flex flex-col border-dashed">
         <CardHeader>
           <div className="flex items-center gap-2 mb-2">
             <div className="p-2 bg-primary/10 rounded-lg">

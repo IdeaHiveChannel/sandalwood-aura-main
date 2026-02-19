@@ -18,9 +18,9 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 const AuthorityTrust = () => (
-  <section className="py-24 md:py-32 px-4 md:px-8 max-w-7xl mx-auto">
+  <section className="py-24 md:py-32 luxury-container">
     <div className="mb-12">
-      <Badge variant="outline" className="mb-4 border-primary/50 text-primary tracking-widest uppercase">Section 5</Badge>
+      <Badge variant="luxury" className="mb-4">Section 5</Badge>
       <SectionTitle
         title="Authority and Trust Development (Step 3)"
         subtitle="In the UAE premium fragrance environment, authority must be built before scale."
@@ -28,7 +28,7 @@ const AuthorityTrust = () => (
     </div>
 
     <AnimatedSection className="mb-12">
-      <Card className="bg-surface/50 border-primary/10 backdrop-blur-sm">
+      <Card className="glass-card">
         <CardContent className="pt-6">
           <p className="font-body text-muted-foreground leading-relaxed">
             This is a market where the niche segment is valued at approximately USD 400 million, luxury fragrances account for more than 80 percent of Dubai fragrance revenue, specialty retail controls 58.9 percent of turnover, and high-intent digital traffic costs AED 20–40 per click.
@@ -54,9 +54,9 @@ const AuthorityTrust = () => (
           { tier: "Premium", price: "AED 25k–60k/mo", desc: "Accelerates authority, high fixed cost", recommended: false },
         ].map((t, i) => (
           <AnimatedSection key={t.tier} delay={i * 0.1}>
-            <Card className={`h-full bg-surface flex flex-col relative ${t.recommended ? 'border-primary shadow-lg shadow-primary/5' : 'border-border'}`}>
+            <Card className={`h-full flex flex-col relative transition-all duration-300 ${t.recommended ? 'glass-card border-gold/50 shadow-gold/20' : 'glass-card border-white/10'}`}>
               {t.recommended && (
-                <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-[10px] uppercase tracking-wider px-2 py-1 rounded-bl">
+                <div className="absolute top-0 right-0 bg-gold text-primary-foreground text-[10px] uppercase tracking-wider px-2 py-1 rounded-bl font-bold">
                   Recommended
                 </div>
               )}
@@ -73,7 +73,7 @@ const AuthorityTrust = () => (
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <Megaphone className="w-5 h-5 text-primary" />
@@ -114,7 +114,7 @@ const AuthorityTrust = () => (
           </CardContent>
         </Card>
 
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <BarChart3 className="w-5 h-5 text-primary" />
@@ -147,7 +147,7 @@ const AuthorityTrust = () => (
         <span className="text-primary">5.2</span> Launch Editorial Strategy
       </h3>
       
-      <Card className="bg-surface border-border overflow-hidden">
+      <Card className="glass-card overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="p-6 md:p-8 bg-surface md:col-span-2">
             <h4 className="font-display text-xl font-semibold text-foreground mb-4">Launch Burst Model</h4>
@@ -194,7 +194,7 @@ const AuthorityTrust = () => (
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
         <div className="lg:col-span-1">
-          <Card className="h-full bg-surface border-border">
+          <Card className="h-full glass-card">
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
                 <Users className="w-5 h-5 text-primary" />
@@ -218,7 +218,7 @@ const AuthorityTrust = () => (
         </div>
 
         <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Card className="bg-surface border-border">
+          <Card className="glass-card">
             <CardHeader>
               <CardTitle className="font-display text-lg text-foreground">Tier Allocation Logic</CardTitle>
             </CardHeader>
@@ -235,7 +235,7 @@ const AuthorityTrust = () => (
             </CardContent>
           </Card>
 
-          <Card className="bg-surface border-border">
+          <Card className="glass-card">
             <CardHeader>
               <CardTitle className="font-display text-lg text-foreground">Return Benchmarks</CardTitle>
             </CardHeader>
@@ -277,7 +277,7 @@ const AuthorityTrust = () => (
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground">Strategic Role</CardTitle>
           </CardHeader>
@@ -298,7 +298,7 @@ const AuthorityTrust = () => (
           </CardContent>
         </Card>
 
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg text-foreground">Measurement & Channels</CardTitle>
           </CardHeader>

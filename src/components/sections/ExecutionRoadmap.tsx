@@ -114,7 +114,7 @@ const ExecutionRoadmap = () => (
         
         {/* 8.1 Strategic Priorities */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Target className="w-4 h-4 text-primary" />
@@ -151,7 +151,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.2 Brand & Creative Finalization */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <PenTool className="w-4 h-4 text-primary" />
@@ -221,7 +221,7 @@ const ExecutionRoadmap = () => (
         
         {/* 8.3 Website & Infrastructure Stabilization */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Globe className="w-4 h-4 text-primary" />
@@ -282,7 +282,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.4 Public Relations Activation */}
         <AnimatedSection delay={0.4}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Megaphone className="w-4 h-4 text-primary" />
@@ -335,7 +335,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.5 Influencer Seeding Phase */}
         <AnimatedSection delay={0.5}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Users className="w-4 h-4 text-primary" />
@@ -394,7 +394,7 @@ const ExecutionRoadmap = () => (
         
         {/* 8.6 Controlled Paid Media Testing */}
         <AnimatedSection delay={0.6}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <MousePointerClick className="w-4 h-4 text-primary" />
@@ -457,7 +457,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.7 Quarter 1 KPI Focus */}
         <AnimatedSection delay={0.7}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Target className="w-4 h-4 text-primary" />
@@ -517,7 +517,7 @@ const ExecutionRoadmap = () => (
         
         {/* 8.8 Digital Expansion */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Globe className="w-4 h-4 text-primary" />
@@ -562,7 +562,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.9 Influencer Expansion */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Star className="w-4 h-4 text-primary" />
@@ -611,7 +611,7 @@ const ExecutionRoadmap = () => (
         
         {/* 8.10 Sampling Acceleration */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Gift className="w-4 h-4 text-primary" />
@@ -644,7 +644,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.11 PR Continuity */}
         <AnimatedSection delay={0.4}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Megaphone className="w-4 h-4 text-primary" />
@@ -680,7 +680,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.12 Quarter 2 KPI Focus */}
         <AnimatedSection delay={0.5}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <LineChart className="w-4 h-4 text-primary" />
@@ -739,7 +739,7 @@ const ExecutionRoadmap = () => (
         
         {/* 8.13 Digital Budget Reallocation */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <PieChart className="w-4 h-4 text-primary" />
@@ -778,7 +778,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.14 Influencer Optimization */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Star className="w-4 h-4 text-primary" />
@@ -825,7 +825,7 @@ const ExecutionRoadmap = () => (
         
         {/* 8.15 CRM Intensification */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Repeat className="w-4 h-4 text-primary" />
@@ -863,7 +863,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.16 Pre-Ramadan Preparation */}
         <AnimatedSection delay={0.4}>
-          <Card className="bg-surface border-border h-full flex flex-col glow-gold">
+          <Card className="glass-card h-full flex flex-col glow-gold">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Moon className="w-4 h-4 text-primary" />
@@ -902,7 +902,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.17 Quarter 3 KPI Focus */}
         <AnimatedSection delay={0.5}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <LineChart className="w-4 h-4 text-primary" />
@@ -960,7 +960,7 @@ const ExecutionRoadmap = () => (
         
         {/* 8.18 Messaging Realignment */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-surface border-border h-full flex flex-col glow-gold">
+          <Card className="glass-card h-full flex flex-col glow-gold">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <MessageSquare className="w-4 h-4 text-primary" />
@@ -1000,7 +1000,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.19 Digital Surge Allocation */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Zap className="w-4 h-4 text-primary" />
@@ -1050,7 +1050,7 @@ const ExecutionRoadmap = () => (
         
         {/* 8.20 Influencer Surge */}
         <AnimatedSection delay={0.3}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Star className="w-4 h-4 text-primary" />
@@ -1087,7 +1087,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.21 Experiential Activation */}
         <AnimatedSection delay={0.4}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Store className="w-4 h-4 text-primary" />
@@ -1128,7 +1128,7 @@ const ExecutionRoadmap = () => (
         
         {/* 8.22 Sampling Intensification */}
         <AnimatedSection delay={0.5}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Package className="w-4 h-4 text-primary" />
@@ -1166,7 +1166,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.23 Post-Ramadan Conversion Window */}
         <AnimatedSection delay={0.6}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <Repeat className="w-4 h-4 text-primary" />
@@ -1197,7 +1197,7 @@ const ExecutionRoadmap = () => (
 
         {/* 8.24 Quarter 4 KPI Focus */}
         <AnimatedSection delay={0.7}>
-          <Card className="bg-surface border-border h-full flex flex-col">
+          <Card className="glass-card h-full flex flex-col">
             <CardHeader className="pb-4 border-b border-border/50">
               <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                 <LineChart className="w-4 h-4 text-primary" />

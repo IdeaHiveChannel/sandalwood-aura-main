@@ -25,9 +25,9 @@ import {
 } from "lucide-react";
 
 const BrandFoundation = () => (
-  <section className="py-24 md:py-32 px-4 md:px-8 max-w-7xl mx-auto">
+  <section className="py-24 md:py-32 luxury-container">
     <div className="mb-12">
-      <Badge variant="outline" className="mb-4 border-primary/50 text-primary tracking-widest uppercase">Section 3</Badge>
+      <Badge variant="luxury" className="mb-4">Section 3</Badge>
       <SectionTitle
         title="Brand Foundation (Step 1)"
         subtitle="In a USD 400 million niche segment growing at 8 percent annually, unclear brand foundations increase acquisition costs, reduce authority perception, and amplify risk in high-cost digital environments."
@@ -35,7 +35,7 @@ const BrandFoundation = () => (
     </div>
 
     <AnimatedSection className="mb-12">
-      <Card className="bg-surface/50 border-primary/10 backdrop-blur-sm">
+      <Card className="glass-card">
         <CardContent className="pt-6">
           <p className="font-body text-muted-foreground leading-relaxed">
             This step must be completed before meaningful digital investment. Brand authority in the UAE fragrance market is not created through advertising alone. It is created through clarity, cultural alignment, performance credibility, and disciplined visual execution. Marketing can amplify a strong foundation, but it cannot compensate for structural weakness in identity or positioning.
@@ -97,7 +97,7 @@ const BrandFoundation = () => (
           },
         ].map((filter, i) => (
           <AnimatedSection key={filter.title} delay={i * 0.1}>
-            <Card className="h-full bg-surface border-border hover:border-primary/30 transition-colors duration-300">
+            <Card className="h-full glass-card hover:border-primary/30 transition-colors duration-300">
               <CardHeader className="pb-4 border-b border-border/50">
                 <CardTitle className="font-display text-lg flex items-center gap-2 text-foreground">
                   <filter.icon className="w-5 h-5 text-primary" />
@@ -132,7 +132,7 @@ const BrandFoundation = () => (
         <span className="text-primary">3.2</span> Brand Positioning
       </h3>
       
-      <Card className="bg-surface border-border">
+      <Card className="glass-card">
         <CardHeader>
           <CardTitle className="font-display text-xl text-foreground flex items-center gap-2">
             <Target className="w-5 h-5 text-primary" />
@@ -229,7 +229,7 @@ const BrandFoundation = () => (
           },
         ].map((sku, i) => (
           <AnimatedSection key={sku.title} delay={i * 0.1}>
-            <Card className="h-full bg-surface border-border flex flex-col">
+            <Card className="h-full glass-card flex flex-col">
               <CardHeader className="pb-4">
                 <div className="flex justify-between items-start mb-2">
                   <div className="p-2 bg-primary/10 rounded-lg">
@@ -284,7 +284,7 @@ const BrandFoundation = () => (
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <Mic2 className="w-5 h-5 text-primary" />
@@ -312,7 +312,7 @@ const BrandFoundation = () => (
           </CardContent>
         </Card>
 
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="font-display text-lg flex items-center gap-2">
               <Layers className="w-5 h-5 text-primary" />
@@ -377,7 +377,7 @@ const BrandFoundation = () => (
           },
         ].map((item, i) => (
           <AnimatedSection key={item.title} delay={i * 0.1}>
-            <Card className="h-full bg-surface border-border">
+            <Card className="h-full glass-card">
               <CardHeader className="pb-3">
                 <div className="mb-3">
                   <item.icon className="w-6 h-6 text-primary" />
@@ -437,7 +437,7 @@ const BrandFoundation = () => (
           { icon: Gift, title: "Influencer Kits", items: ["Brand guidelines", "Visual references", "Messaging anchors", "Usage demos"] },
         ].map((block, i) => (
           <AnimatedSection key={block.title} delay={i * 0.05}>
-            <Card className="h-full bg-surface border-border hover:border-primary/30 transition-all duration-300">
+            <Card className="h-full glass-card hover:border-primary/30 transition-all duration-300">
               <CardHeader className="pb-3 border-b border-border/30">
                 <div className="flex items-center gap-3">
                   <block.icon className="w-4 h-4 text-primary" />

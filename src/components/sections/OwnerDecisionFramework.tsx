@@ -756,7 +756,7 @@ const OwnerDecisionFramework = () => {
             { label: "Dubai Mall Visitors", value: "100 Million+", sub: "annual" },
             { label: "MOE Visitors", value: "~42 Million", sub: "annual" }
           ].map((stat, i) => (
-            <Card key={i} className="bg-surface border-border/50">
+            <Card key={i} className="glass-card/50">
               <CardContent className="p-4 text-center">
                 <div className="text-[10px] text-muted-foreground uppercase tracking-wider mb-1">{stat.label}</div>
                 <div className="text-lg font-bold text-foreground">{stat.value}</div>

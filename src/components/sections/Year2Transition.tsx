@@ -31,7 +31,7 @@ const Year2Transition = () => {
       {/* Year 1 vs Year 2 Objectives */}
       <AnimatedSection className="mb-16 pdf-section">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <Card className="bg-surface border-border/50 relative overflow-hidden">
+          <Card className="glass-card/50 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-1 h-full bg-muted-foreground/30" />
             <CardHeader className="pb-2">
               <Badge variant="secondary" className="w-fit mb-2">Year 1 Objective</Badge>
@@ -72,7 +72,7 @@ const Year2Transition = () => {
           <span className="text-primary">12.1</span> Preconditions for Expansion
         </h3>
         
-        <Card className="bg-surface border-border">
+        <Card className="glass-card">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg">
               <Scale className="w-5 h-5 text-primary" />
@@ -122,7 +122,7 @@ const Year2Transition = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Option 1 */}
-          <Card className="bg-surface border-border h-full">
+          <Card className="glass-card h-full">
             <CardHeader className="pb-3">
               <Badge variant="outline" className="w-fit mb-2">Option 1</Badge>
               <CardTitle className="text-base flex items-center gap-2">
@@ -145,7 +145,7 @@ const Year2Transition = () => {
           </Card>
 
           {/* Option 2 */}
-          <Card className="bg-surface border-border h-full">
+          <Card className="glass-card h-full">
             <CardHeader className="pb-3">
               <Badge variant="outline" className="w-fit mb-2">Option 2</Badge>
               <CardTitle className="text-base flex items-center gap-2">
@@ -168,7 +168,7 @@ const Year2Transition = () => {
           </Card>
 
           {/* Option 3 */}
-          <Card className="bg-surface border-border h-full">
+          <Card className="glass-card h-full">
             <CardHeader className="pb-3">
               <Badge variant="outline" className="w-fit mb-2">Option 3</Badge>
               <CardTitle className="text-base flex items-center gap-2">
@@ -191,7 +191,7 @@ const Year2Transition = () => {
           </Card>
 
           {/* Option 4 */}
-          <Card className="bg-surface border-border h-full">
+          <Card className="glass-card h-full">
             <CardHeader className="pb-3">
               <Badge variant="outline" className="w-fit mb-2">Option 4</Badge>
               <CardTitle className="text-base flex items-center gap-2">
@@ -218,7 +218,7 @@ const Year2Transition = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pdf-section">
         {/* 12.3 Risk Discipline */}
         <AnimatedSection delay={0.1}>
-          <Card className="bg-surface border-border h-full">
+          <Card className="glass-card h-full">
             <CardHeader>
               <div className="flex items-center justify-between mb-2">
                 <h3 className="font-display text-xl font-semibold text-foreground flex items-center gap-2">
@@ -250,7 +250,7 @@ const Year2Transition = () => {
 
         {/* 12.4 Capital Discipline */}
         <AnimatedSection delay={0.2}>
-          <Card className="bg-surface border-border h-full">
+          <Card className="glass-card h-full">
             <CardHeader>
               <div className="flex items-center justify-between mb-2">
                 <h3 className="font-display text-xl font-semibold text-foreground flex items-center gap-2">
